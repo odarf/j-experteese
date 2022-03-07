@@ -1,4 +1,4 @@
-/.idea
+.idea
 .ruby-version
-tmp/
-log/
+tmp
+log
