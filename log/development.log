@@ -735,3 +735,170 @@ Processing by MainController#index as HTML
 Completed 200 OK in 207ms (Views: 183.3ms | ActiveRecord: 0.0ms | Allocations: 55289)
 
 
+Started GET "/" for 127.0.0.1 at 2022-03-07 13:56:02 +0300
+  [1m[35m (32.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering main/index.html.haml within layouts/application
+  Rendered main/index.html.haml within layouts/application (Duration: 15.6ms | Allocations: 5491)
+  Rendered layout layouts/application.html.haml (Duration: 67.7ms | Allocations: 14989)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 0.0ms | Allocations: 20752)
+
+
+  
+ActionView::Template::Error (couldn't find file 'font-awesome' with type 'text/css'
+Checked in these paths: 
+  /home/jelly/codeProjects/j-experteese/app/assets/config
+  /home/jelly/codeProjects/j-experteese/app/assets/images
+  /home/jelly/codeProjects/j-experteese/app/assets/stylesheets
+  /usr/lib/ruby/gems/3.0.0/gems/stimulus-rails-1.0.4/app/assets/javascripts
+  /usr/lib/ruby/gems/3.0.0/gems/turbo-rails-1.0.1/app/assets/javascripts
+  /usr/lib/ruby/gems/3.0.0/gems/importmap-rails-1.0.3/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actiontext-7.0.2.2/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actiontext-7.0.2.2/app/assets/stylesheets
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actioncable-7.0.2.2/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/activestorage-7.0.2.2/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actionview-7.0.2.2/lib/assets/compiled
+  /home/jelly/codeProjects/j-experteese/app/javascript
+  /home/jelly/codeProjects/j-experteese/vendor/javascript):
+     6:     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+     7:     = csrf_meta_tags
+     8:     = csp_meta_tag
+     9:     = stylesheet_link_tag "application", "data-turbo-track": "reload"
+    10:     = javascript_importmap_tags
+    11:     = favicon_link_tag "favicon.ico"
+    12:   %body
+  
+app/assets/stylesheets/application.css:14
+app/views/layouts/application.html.haml:9
+Started POST "/__web_console/repl_sessions/1ff7cd869ca928372ea58cdd300af142/trace" for 127.0.0.1 at 2022-03-07 13:56:31 +0300
+Started GET "/" for 127.0.0.1 at 2022-03-07 14:11:20 +0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering main/index.html.haml within layouts/application
+  Rendered main/index.html.haml within layouts/application (Duration: 19.2ms | Allocations: 5491)
+  Rendered layout layouts/application.html.haml (Duration: 99.7ms | Allocations: 14753)
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 0.0ms | Allocations: 20575)
+
+
+  
+ActionView::Template::Error (couldn't find file 'flash' with type 'text/css'
+Checked in these paths: 
+  /home/jelly/codeProjects/j-experteese/app/assets/config
+  /home/jelly/codeProjects/j-experteese/app/assets/images
+  /home/jelly/codeProjects/j-experteese/app/assets/stylesheets
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/font-awesome-rails-4.7.0.8/app/assets/fonts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/font-awesome-rails-4.7.0.8/app/assets/stylesheets
+  /usr/lib/ruby/gems/3.0.0/gems/stimulus-rails-1.0.4/app/assets/javascripts
+  /usr/lib/ruby/gems/3.0.0/gems/turbo-rails-1.0.1/app/assets/javascripts
+  /usr/lib/ruby/gems/3.0.0/gems/importmap-rails-1.0.3/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actiontext-7.0.2.2/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actiontext-7.0.2.2/app/assets/stylesheets
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actioncable-7.0.2.2/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/activestorage-7.0.2.2/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actionview-7.0.2.2/lib/assets/compiled
+  /home/jelly/codeProjects/j-experteese/app/javascript
+  /home/jelly/codeProjects/j-experteese/vendor/javascript
+  /usr/lib/ruby/gems/3.0.0/gems/font-awesome-sass-5.15.1/assets/stylesheets
+  /usr/lib/ruby/gems/3.0.0/gems/font-awesome-sass-5.15.1/assets/fonts):
+     6:     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+     7:     = csrf_meta_tags
+     8:     = csp_meta_tag
+     9:     = stylesheet_link_tag "application", "data-turbo-track": "reload"
+    10:     = javascript_importmap_tags
+    11:     = favicon_link_tag "favicon.ico"
+    12:   %body
+  
+app/assets/stylesheets/application.css:15
+app/views/layouts/application.html.haml:9
+Started GET "/" for 127.0.0.1 at 2022-03-07 14:12:31 +0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering main/index.html.haml within layouts/application
+  Rendered main/index.html.haml within layouts/application (Duration: 16.2ms | Allocations: 5491)
+  Rendered layout layouts/application.html.haml (Duration: 57.3ms | Allocations: 14753)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms | Allocations: 20575)
+
+
+  
+ActionView::Template::Error (couldn't find file 'flash' with type 'text/css'
+Checked in these paths: 
+  /home/jelly/codeProjects/j-experteese/app/assets/config
+  /home/jelly/codeProjects/j-experteese/app/assets/images
+  /home/jelly/codeProjects/j-experteese/app/assets/stylesheets
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/font-awesome-rails-4.7.0.8/app/assets/fonts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/font-awesome-rails-4.7.0.8/app/assets/stylesheets
+  /usr/lib/ruby/gems/3.0.0/gems/stimulus-rails-1.0.4/app/assets/javascripts
+  /usr/lib/ruby/gems/3.0.0/gems/turbo-rails-1.0.1/app/assets/javascripts
+  /usr/lib/ruby/gems/3.0.0/gems/importmap-rails-1.0.3/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actiontext-7.0.2.2/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actiontext-7.0.2.2/app/assets/stylesheets
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actioncable-7.0.2.2/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/activestorage-7.0.2.2/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actionview-7.0.2.2/lib/assets/compiled
+  /home/jelly/codeProjects/j-experteese/app/javascript
+  /home/jelly/codeProjects/j-experteese/vendor/javascript
+  /usr/lib/ruby/gems/3.0.0/gems/font-awesome-sass-5.15.1/assets/stylesheets
+  /usr/lib/ruby/gems/3.0.0/gems/font-awesome-sass-5.15.1/assets/fonts):
+     6:     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+     7:     = csrf_meta_tags
+     8:     = csp_meta_tag
+     9:     = stylesheet_link_tag "application", "data-turbo-track": "reload"
+    10:     = javascript_importmap_tags
+    11:     = favicon_link_tag "favicon.ico"
+    12:   %body
+  
+app/assets/stylesheets/application.css:15
+app/views/layouts/application.html.haml:9
+Started GET "/" for 127.0.0.1 at 2022-03-07 14:14:17 +0300
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering main/index.html.haml within layouts/application
+  Rendered main/index.html.haml within layouts/application (Duration: 22.4ms | Allocations: 5491)
+  Rendered layout layouts/application.html.haml (Duration: 70.0ms | Allocations: 15739)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms | Allocations: 21561)
+
+
+  
+ActionView::Template::Error (couldn't find file 'flash' with type 'text/css'
+Checked in these paths: 
+  /home/jelly/codeProjects/j-experteese/app/assets/config
+  /home/jelly/codeProjects/j-experteese/app/assets/images
+  /home/jelly/codeProjects/j-experteese/app/assets/stylesheets
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/font-awesome-rails-4.7.0.8/app/assets/fonts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/font-awesome-rails-4.7.0.8/app/assets/stylesheets
+  /usr/lib/ruby/gems/3.0.0/gems/stimulus-rails-1.0.4/app/assets/javascripts
+  /usr/lib/ruby/gems/3.0.0/gems/turbo-rails-1.0.1/app/assets/javascripts
+  /usr/lib/ruby/gems/3.0.0/gems/importmap-rails-1.0.3/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actiontext-7.0.2.2/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actiontext-7.0.2.2/app/assets/stylesheets
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actioncable-7.0.2.2/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/activestorage-7.0.2.2/app/assets/javascripts
+  /home/jelly/.local/share/gem/ruby/3.0.0/gems/actionview-7.0.2.2/lib/assets/compiled
+  /home/jelly/codeProjects/j-experteese/app/javascript
+  /home/jelly/codeProjects/j-experteese/vendor/javascript
+  /usr/lib/ruby/gems/3.0.0/gems/font-awesome-sass-5.15.1/assets/stylesheets
+  /usr/lib/ruby/gems/3.0.0/gems/font-awesome-sass-5.15.1/assets/fonts):
+     6:     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+     7:     = csrf_meta_tags
+     8:     = csp_meta_tag
+     9:     = stylesheet_link_tag "application", "data-turbo-track": "reload"
+    10:     = javascript_importmap_tags
+    11:     = favicon_link_tag "favicon.ico"
+    12:   %body
+  
+app/assets/stylesheets/application.css:15
+app/views/layouts/application.html.haml:9
+Started GET "/" for 127.0.0.1 at 2022-03-07 14:15:08 +0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering main/index.html.haml within layouts/application
+  Rendered main/index.html.haml within layouts/application (Duration: 22.8ms | Allocations: 5491)
+  Rendered layout layouts/application.html.haml (Duration: 1132.5ms | Allocations: 186903)
+Completed 200 OK in 1170ms (Views: 1144.0ms | ActiveRecord: 0.0ms | Allocations: 192787)
+
+

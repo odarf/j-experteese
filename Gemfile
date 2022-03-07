@@ -28,6 +28,11 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 gem "haml-rails"
+gem "slim"
+gem "slim-rails"
+gem "font-awesome-sass"
+gem "font-awesome-rails"
+gem "flash"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
