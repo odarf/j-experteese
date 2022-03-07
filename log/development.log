@@ -13,3 +13,40 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 1436)
 
 
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/" for 127.0.0.1 at 2022-03-07 12:53:22 +0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jelly/.local/share/gem/ruby/3.0.0/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jelly/.local/share/gem/ruby/3.0.0/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.7ms | Allocations: 725)
+Completed 200 OK in 31ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 6358)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-07 13:02:10 +0300
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 445)
+  Rendered layout layouts/application.html.erb (Duration: 630.1ms | Allocations: 92949)
+Completed 200 OK in 652ms (Views: 637.2ms | ActiveRecord: 0.0ms | Allocations: 98757)
+
+
+Started GET "/main/index" for 127.0.0.1 at 2022-03-07 13:02:23 +0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2374)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 2764)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-07 13:04:38 +0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2240)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 2565)
+
+
