@@ -725,3 +725,13 @@ Processing by MainController#contacts as HTML
 Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 4647)
 
 
+Started GET "/" for 127.0.0.1 at 2022-03-07 13:48:07 +0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering main/index.html.haml within layouts/application
+  Rendered main/index.html.haml within layouts/application (Duration: 21.1ms | Allocations: 5493)
+  Rendered layout layouts/application.html.haml (Duration: 170.6ms | Allocations: 49479)
+Completed 200 OK in 207ms (Views: 183.3ms | ActiveRecord: 0.0ms | Allocations: 55289)
+
+
