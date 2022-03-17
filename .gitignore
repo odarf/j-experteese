@@ -2,3 +2,4 @@
 .ruby-version
 tmp
 log
+/config/secrets.yml
