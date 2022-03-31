@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong File:
+  = @image.file
+
+p
+  strong Name:
+  = @image.name
+
+p
+  strong Avg value:
+  = @image.avg_value
+
+p
+  strong Theme:
+  = @image.theme_id
+
+=> link_to 'Edit', edit_image_path(@image)
+'|
+=< link_to 'Back', images_path

@@ -1,0 +1,13 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @theme.name
+
+p
+  strong Items qty:
+  = @theme.items_qty
+
+=> link_to 'Edit', edit_theme_path(@theme)
+'|
+=< link_to 'Back', themes_path
