@@ -27,7 +27,7 @@ Image.create([
 Theme.delete_all
 Theme.reset_pk_sequence
 Theme.create([
-               { name: '----' }, # 1 no theme
+               { name: '----' }, # 1 no theme СДЕЛАТЬ 3 ТЕМЫ
                { name: 'Какое отображение лучше?' }, # 2
                { name: 'Какое отображение лучше?' }, # 3
                { name: 'Какое отображение лучше?' }, # 4
