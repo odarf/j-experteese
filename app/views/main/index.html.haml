@@ -1,8 +1,6 @@
-%h1 Welcome j-exp
-%h2
-  %ul
-    %li= link_to 'Contacts', main_contacts_path
-    %li= link_to 'Help', main_help_path
-    %li= link_to 'About', main_about_path
-    %li= link_to 'Ruby on Rails Website', 'http://rubyonrails.org'
-%p Find me in app/views/main/help.html.erb
+.center.jumbotron
+  %h1 Welcome to j-experteese
+  - if signed_in?
+    = link_to "Proceed to work!", work_path, class: "btn btn-lg btn-primary"
+  -else
+    = link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary"

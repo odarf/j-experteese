@@ -59,12 +59,12 @@ class ImagesController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_image
-      @image = Image.find(params[:id])
-    end
+  def set_image
+    @image = Image.find(params[:id])
+  end
 
     # Only allow a list of trusted parameters through.
-    def image_params
-      params.require(:image).permit(:file, :name, :avg_value, :theme_id)
-    end
+  def image_params
+    params.require(:image).permit(:file, :name, :avg_value, :theme_id)
+  end
 end

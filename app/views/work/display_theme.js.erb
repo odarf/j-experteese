@@ -1,4 +1,4 @@
-// get data from controller
+// get data from controller        контроль в консоли
 var imageData = '<%= raw @image_data %>';
 console.log("IN display_theme: @image_data = " + imageData );
 var valuesQty = '<%= @image_data[:values_qty] %>';
@@ -8,7 +8,9 @@ $('.left_controls span.total_values h2.total').append().html(valuesQty);
 // show theme
 var selectedTheme = '<%= @image_data[:theme] %>';
 
-if( selectedTheme == "Выберите тему для оценки" || selectedTheme == "Select theme to leave your answer" || selectedTheme == ""){
+if( selectedTheme == "Выберите тему для оценки" ||
+    selectedTheme == "Select theme to leave your answer" ||
+    selectedTheme == ""){
     $('.img-left-side').css({"display": "none"});
     $('.img-right-side').css({"display": "none"});
     $('.image .image_display .image_diag').css({"display": "none"});
@@ -17,48 +19,30 @@ if( selectedTheme == "Выберите тему для оценки" || selected
     $('.img-right-side').css({"display": "block"});
     $('.image .image_display .image_diag').css({"display": "block"});
 }
-var userValuedImage = '<%= @image_data[:user_valued] %>';
-
-if(userValuedImage == 1){
-    console.log("3c1 IN IF: userValuedImage == true? == " + userValuedImage);
-    $('.left_controls span.common_value').css({"display": "block"});
-    $('.image .image_display .image_diag').css({"display": "none"});
-    var imageCommonValue = '<%= @image_data[:common_ave_value] %>';
-    console.log("3c2 IN IF: imageCommonValue = " + imageCommonValue);
-    $('.left_controls span.common_value h2.common').append().html(imageCommonValue);
-
-    var imageValue = '<%= @image_data[:value] %>';
-    $('.image .image_display .image_user_value').append().html(imageValue).css({"display": "block"});
-}else{
-    $('.left_controls span.common_value').css({"display": "none"});
-    $('.image .image_display .image_user_value').css({"display": "none"});
-}
-
-var currentUserId = '<%= @image_data[:current_user_id] %>';
-console.log("3d IN display_theme: currentUserId = " + currentUserId);
 
 $('.image_display h2.up-theme').append().html(selectedTheme);
 
 //restore button
 $('.select_theme').empty().html("<%= j render 'work/button_theme_select' -%>");
-// $('.select_theme').empty().html("< %= j render 'work/choose_theme_from_arr', locale: @current_locale -%>");
 
 // get data from controller
 var imageCurrentIndex = '<%= @image_data[:index] %>';
+//var firstThemeImagesName = JSON.parse(firstThemeImages)["name"];
 var oneImageName = '<%= @image_data[:name] %>';
 var oneImageFile = '<%= @image_data[:file] %>';
-console.log("3e IN display_theme: oneImageFile = " + oneImageFile);
+console.log("3e IN display_theme: oneImageFile = " +
+    oneImageFile);
 var oneImageId = '<%= @image_data[:image_id] %>';
 console.log("3f IN display_theme: oneImageId = " + oneImageId);
 var themeImagesSize = '<%= @image_data[:images_arr_size] %>';
 var selectedThemeId = '<%= @image_data[:theme_id] %>';
 
+
 // show name of image
-//var nameImage = selectedImage.slice(0,-4) ;  // put away . file .jpr
 $('.image_display h2.up').append().html(oneImageName);
 
 // show image
 var pathImage = "assets/pictures/" + oneImageFile;
-// $('.img-center').html('<img alt="Selected Image" src="'+ pathImage + '"/>');
+// $('.img-center').html('<img alt="Selected Image" src="' + pathImage + '"/>');
 $(".img-center").attr({title: "Selected image" });
 $(".img-center img").attr({alt: "Selected Image", src: pathImage, title: "Selected image" });
