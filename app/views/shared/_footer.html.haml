@@ -1,0 +1,11 @@
+%footer.footer
+  %h3
+    j-experteese
+    %i.fa.fa-copyright.iconsMain{style: "font-size: 1.3em;"}
+    = Date.current.year
+
+  .footer_menu
+    %nav
+      %ul
+        %li=link_to "about", about_path
+        %li=link_to "contact", contacts_path

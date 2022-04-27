@@ -28,6 +28,12 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 gem "haml-rails"
+gem 'bootstrap-sass', '>= 3.4.1'
+gem 'sass-rails'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'rails-asset-jqueryui'
+gem 'turbolinks'
 gem "slim"
 gem "slim-rails"
 gem "font-awesome-sass"
@@ -38,8 +44,9 @@ gem "activerecord-reset-pk-sequence"
 gem "bcrypt"
 gem "active_model_serializers"
 gem "rdoc"
+gem 'kaminari'
 # Use Redis adapter to run Action Cable in production
-# gem "redis", "~> 4.0"
+gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"

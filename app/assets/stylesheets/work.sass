@@ -1,0 +1,683 @@
+// Place all the styles related to the images controller here.
+// They will automatically be included in application.sass.
+// You can use Sass here: http://sass-lang.com/
+
+i
+  height: 1.5em
+  font-size: 1.5em
+
+i:hover:not(:disabled)
+  cursor: pointer  //cursor: hand
+  border: rgba(255, 233, 138, 0.70)
+  //background-color: #9bb2fc
+  color: #555fbe
+  //rgba(255, 200, 141, 0.40)
+  h2.up
+    color: #555fbe
+
+
+button
+  color: #71C495
+  //text-decoration: none
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif
+  text-shadow: rgba(13, 178, 159, 0.24)
+  font-size: 1.5em
+
+  &:hover:not(:disabled)
+    //background-color: #9bb2fc
+    background: #badde4
+//rgba(255, 200, 141, 0.40)
+
+//$image_heigt: 150px
+.button__left
+  border-radius: 35px
+  height: 3em
+  box-shadow: 3px 3px 4px #989BB0
+  background: rgba(209, 211, 141, 0.40)
+  width: 80%
+  position: relative
+  left: 10%
+  border: rgba(255, 255, 255, 0.70)
+  //margin-top: 1.2em
+  text-align: center
+  //text-shadow: rgba(13, 178, 159, 0.24)
+
+  .modalBtn
+    margin-top: .1em
+
+  .theme
+    margin-top: 1.2em
+
+//.button__left.modalBtn
+
+
+.button__choose
+  //border-radius: 15px
+  color: #82A1C4
+  height: 2.2em
+  box-shadow: 3px 3px 4px #ACC9E5
+  background: rgba(222, 165, 242, 0.29)
+  width: 60%
+  //position: relative
+  text-align: center
+  //left: 10%
+  border: rgba(219, 255, 219, 0.70)
+  padding: 0 10px
+  margin-bottom: 1.5em
+  font-size: 1.1em
+
+
+.button__results.save
+  border-radius: 55px
+  height: 2.5em
+  box-shadow: 3px 3px 4px #989BB0
+  background: rgba(209, 211, 141, 0.4)
+  width: 20%
+  //position: relative
+  //left: 17%
+  //bottom: -51%
+  border: rgba(255, 255, 255, 0.70)
+  //vertical-align: bottom
+  //margin-top: 1em
+  margin-top: .5em
+  display:  block  //none
+  //text-align: center
+  cursor: auto
+  text-decoration: none
+  //padding: 0 10px
+  float: left
+  margin-left: 8em
+  margin-bottom: .6em
+
+  a
+    text-shadow: 0 -1px 1px #4aa5cf
+    text-decoration: none
+    color: #4863be
+    position: relative
+    text-align: center
+
+
+.button__results.save:hover:not(:disabled)
+  background: #badde4
+  a
+    text-decoration: none
+
+
+.image
+  //margin-top: 2.05%
+  $img-small-height: 1.1em
+
+  //@clearfix
+  //+outer-container(100%)
+
+  .brainlook
+    color: #4863be
+    text-align: center
+    position: relative
+    bottom: -1em
+    height: 2em
+    font-size: 1em
+
+    p.share
+      font-size: .9em
+
+
+
+  .left_controls
+    // @include span-columns(4)
+    border: solid 1px #67aa73
+    display: block
+    background: rgba(10, 238, 10, 0.07)
+    color: gray
+    height: 45em
+    width: 100%
+    margin-top: 2em
+
+    &:hover
+      border: solid 1px #497851
+
+
+
+    span.common_value, .total_values
+      text-align: center
+      position: relative
+      //left: 15%
+      color: #4863be
+      font-size: 1.4em
+      font-weight: bold
+      top: 4em
+      display: none
+      height: 3em
+
+      h2
+        border-radius: 10px
+        text-align: center
+        color: #ffffff
+        font-weight: bold
+        font-size: large
+        display: inline-block
+
+
+      h2.common
+        width: 45px
+        padding-top: 10px
+        padding-bottom: 10px
+        background-image: -webkit-linear-gradient(top, #cccccc, #330000)
+        background-image: -o-linear-gradient(top, #cccccc, #330000)
+        background-image: -moz-linear-gradient(top, #cccccc, #330000)
+
+    span.total_values
+      display: block
+
+      h2.total
+        width: inherit //45px
+        padding: 10px
+        background-image: -webkit-linear-gradient(top, #cccccc, #05330c)
+        background-image: -o-linear-gradient(top, #cccccc, #05330c)
+        background-image: -moz-linear-gradient(top, #cccccc, #05330c)
+
+
+
+
+    input.load_image
+      color: gray
+
+    select#theme
+      margin-bottom: 10px
+
+    .select_theme
+      display: block
+      height: 6em
+      margin-top: 9em
+
+      .form_select
+        display: block
+        color: #3b519c
+        width: 80%
+        height: 6em
+        position: relative
+        text-align: center
+        left: 11%
+        font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif
+        font-size: 1.5em
+        //margin-top: 1em
+
+        input
+          color: #3475BE
+          background: rgba(222, 165, 242, 0)
+          padding: 0
+          font-size: .9em
+          height: 1.5em
+          -webkit-transition: background-color 0.3s ease-in-out
+          -moz-transition: background-color 0.3s ease-in-out
+          -o-transition: background-color 0.3s ease-in-out
+          transition: background-color 0.3s ease-in-out
+          cursor: pointer
+
+    .select_image
+      display: block
+      height: 10em
+      margin-top: .1em
+
+      .form_select
+        display: block
+        color: #4863be
+        width: 80%
+        height: 5.5em
+        position: relative
+        text-align: center
+        left: 11%
+        font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif
+        font-size: 1.5em
+        margin-top: 2.5em
+
+        input
+          color: #3475BE
+          background: rgba(222, 165, 242, 0)
+          padding: 0
+          font-size: .9em
+          height: 1.5em
+          -webkit-transition: background-color 0.3s ease-in-out
+          -moz-transition: background-color 0.3s ease-in-out
+          -o-transition: background-color 0.3s ease-in-out
+          transition: background-color 0.3s ease-in-out
+          cursor: pointer
+
+
+    .image_input_form
+      height: 18em
+      font-size: 1.5em
+      color: #4863be
+      display: block
+      position: relative
+      width: 80%
+      text-align: center
+      left: 11%
+      margin-top: 1.5em
+
+      input
+        color: #3475BE
+        background-color: #F5F5F5
+        padding: 0
+        font-size: .9em
+        height: 1.5em
+        -webkit-transition: background-color 0.3s ease-in-out
+        -moz-transition: background-color 0.3s ease-in-out
+        -o-transition: background-color 0.3s ease-in-out
+        transition: background-color 0.3s ease-in-out
+        cursor: text
+
+
+      .file_url
+        padding: 0
+        position: relative
+        margin-bottom: 1.15em
+        opacity: 0.4
+
+        input
+          background-color: #F5F5F5
+
+      .file_url:hover
+        opacity: 1
+
+        input[type="text"]:hover
+          border: 1px solid #438F43
+
+      .file_device
+        padding: 0
+        position: relative
+        opacity: 0.4
+
+        input
+          background-color: #F5F5F5
+      .file_device:hover
+        opacity: 1
+
+
+      .button__choose input
+        background-color: rgba(222, 165, 242, 0)
+        cursor: pointer
+
+
+    .select_image_hide
+      display: none
+
+    a
+      //-webkit-appearance: button
+      //-moz-appearance: button
+      //appearance: button
+      text-shadow: 0 -1px 1px #4aa5cf
+      text-decoration: none
+      color: #4863be
+
+
+  .image_display
+    //@include span-columns(8)
+    //@include outer-container(100%)
+    position: relative
+    margin: 0 0 10px 0
+    height: 45em
+    border: solid 1px #803faa
+    background: rgba(239, 122, 6, 0.31)
+    color: gray
+    margin-top: 2em
+    &:hover
+      border: solid 1px #291537
+
+
+    h2.up-theme
+      font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif
+      text-align: center
+      color: #2094a6
+      margin: 10px
+      cursor: default
+      height: 2.1em
+      font-size: 2em
+
+    h2.up
+      font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif
+      text-align: left
+      color: #770772
+      //margin: 10px
+      cursor: default
+      //height: 2em
+      position: relative
+      left: 8%
+      width: 82%
+      margin-top: 15px
+      margin-bottom: 5px
+      margin-left: 5px
+      margin-right: 5px
+      font-size: 1.6em
+
+    .img-left-side
+      display: none
+      margin-left: 1.35em
+      //@include span-columns(2)
+      //position: relative
+      //height: 300px
+      //float: left
+      &hover
+        background-color: #9bb2fc
+    h3
+      color: #2094a6
+      text-align: center
+      text-shadow: rgba(13, 178, 159, 0.24)
+      font-size: 2.6em
+
+    .img-right-side
+      display: none
+      margin-left: -70%
+
+    @-webkit-keyframes fadeIn
+      from
+        opacity: 0.3
+      to
+        opacity: 1
+
+    @keyframes fadeIn
+      from
+        opacity: 0.3
+      to
+        opacity: 1
+
+    @-webkit-keyframes displayIn
+      from
+        display: none
+      to
+        display: block
+
+    @keyframes displayIn
+      from
+        display: none
+      to
+        display: block
+
+
+    .img-center
+      display: block
+      -webkit-animation: fadeIn 1s
+      animation: fadeIn 1s
+
+      //visibility: hidden
+      opacity: 1
+      //transition: opacity 1s ease-in-out
+      //-webkit-transition: opacity 1s /* For Safari 3.1 to 6.0 */
+      //transition-property: all
+      //transition-duration: 2s
+      //transition-timing-function: linear
+      //transition-delay: 1s
+
+      //@include span-columns(8)
+      position: relative
+      //float: left
+      text-align: center
+      object-fit: fill
+      border-bottom: solid 3px #b7e9de
+      border-right: solid 3px #b7e9de
+      height: 34em
+
+      .img-title
+        display: none
+
+    //img
+      //display: block
+      //-webkit-animation: displayIn .5s
+      //animation: displayIn .5s
+
+
+    .img-center:hover
+      border: solid 3px #7384aa
+      cursor: pointer  //cursor: hand
+      transition: border .3s ease-in-out
+
+
+
+      h2.up
+        color: #555fbe
+      .img-title
+        display: block
+        box-sizing: content-box
+        color: #c3ffff
+        position: absolute
+        top: 2em
+        margin: 0
+        height: 100%
+        width: 100%
+        text-align: center
+        font-size: 2.7em
+        line-height: 3em
+
+
+    .image_user_value
+      text-align: center
+      color: #ffffff
+      font-weight: bold
+      font-size: large
+      padding-top: .6em
+      //padding-bottom: 10px
+      display: none
+      left: 45%
+      top: -5%
+      //border: 25px solid #ECEBFA   ///////////////////////// 30px solid rgb(48, 250, 41)
+      background-image: -webkit-linear-gradient(top, #cccccc, #d00346)
+      background-image: -o-linear-gradient(top, #cccccc, #d00346)
+      background-image: -moz-linear-gradient(top, #cccccc, #d00346)
+      width: 47px   /////////////////////////
+      height: 47px /////////////////////////
+      border-radius: 22px   /////////////////////////
+      //-webkit-animation: turning_cw 5s infinite
+      //-moz-animation: turning_cw 5s infinite
+      //animation: turning_cw 5s infinite
+      position: relative   /////////////////////////
+
+      &:hover
+        -webkit-box-shadow: 0 0 40px 15px #dd56e0
+        -moz-box-shadow: 0 0 40px 15px #dd56e0
+        box-shadow: 0 0 40px 15px #dd56e0
+
+
+    //.outer-circle_left
+
+    //.indic-circ.show
+    //  +clearfix
+    //  display: block
+    //  border-radius: 30px
+    //  border: 30px solid #30fa29
+    //  left: 43.75%
+    //width: 30px   /////////////////////////
+    //height: 30px
+    //position: relative
+
+
+    .image_diag
+      display: none
+      position: relative
+      border: solid 1px #67aa73
+      background: rgba(54, 119, 189, 0.14)
+      height: 8.6em
+      color: indianred
+      text-align: center
+      font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif
+      top: 3.65em
+      &:hover
+        border: solid 1px #385D3F
+
+
+
+
+
+
+
+
+      .indicator
+        background: #deb2ad
+        text-align: center
+
+        .outer-circle
+          display: none     /////////////////////////
+
+          left: 10.5%    /////////////////////////
+          //-webkit-box-shadow: 0 0 50px 10px #453D9B
+          //-moz-box-shadow: 0 0 50px 10px #453D9B
+          //box-shadow: 0 0 50px 10px #453D9B
+          border: 25px solid #ECEBFA   ///////////////////////// 30px solid rgb(48, 250, 41)
+          //border-top-color: #746EBB
+          //margin: 3% auto
+          //float: center
+          //text-align: center
+          //background: -webkit-linear-gradient(top, #ffffff 48%, #ecebfa 49%, #ecebfa 51%, #fff 52%)
+          //background: -moz-linear-gradient(top, #ffffff 48%, #ecebfa 49%, #ecebfa 51%, #fff 52%)
+          //background: linear-gradient(to bottom, #ffffff 48%, #ecebfa 49%, #ecebfa 51%, #fff 52%)
+          width: 30px   /////////////////////////
+          height: 30px /////////////////////////
+          //-webkit-border-radius: 100px
+          //-moz-border-radius: 100px
+          border-radius: 25px   /////////////////////////
+          //-webkit-animation: turning_cw 5s infinite
+          //-moz-animation: turning_cw 5s infinite
+          //animation: turning_cw 5s infinite
+          position: relative   /////////////////////////
+
+          &:hover
+            -webkit-box-shadow: 0 0 30px 15px #453D9B
+            -moz-box-shadow: 0 0 30px 15px #453D9B
+            box-shadow: 0 0 30px 15px #453D9B
+
+        .outer-circle.show
+          display: block
+          border-radius: 30px
+          border: 30px solid #30fa29
+          left: 43.75%
+
+
+      h2.down
+        font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif
+        color: #555fbe
+        display: block
+        font-size: 2em
+        margin-left: 1em
+        margin-bottom: 0
+        float: left
+        margin-top: .85em
+
+      .scale
+        display: none
+        width: 100%
+        background-color: lightgrey
+        line-height: .1em //$img-small-height
+        position: relative
+        top: .9em
+        background: linear-gradient(to right, rgba(247, 27, 27, 0.68), rgba(165, 165, 0, 0.68), rgba(27, 247, 27, 0.68))
+
+        .small_img_box
+          display: block
+          width: 1.35em
+          height: 100%
+          left: 20.75%
+          vertical-align: top
+          background-color: #b5d31c
+          position: relative
+          padding: 0
+          margin: 0
+          %img
+            display: none
+            vertical-align: top
+            width: 100%
+            height: 100%
+            line-height: $img-small-height
+            padding: 0
+            margin: 0
+
+
+//.modal_list_results
+//  display: block
+//  //position: absolute
+//  height: 10em
+//  //margin-top: 1em
+
+//#overlay_m
+//  visibility: hidden
+//  position: absolute
+//  left: 0px
+//  top: 0px
+//  width: 100%
+//  height: 100%
+//  text-align: center
+//  z-index: 1000
+//  h2
+//    color: #000099
+//    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif
+//    font-size: 2em
+
+//#overlay_m div
+//  width: 60%
+//  margin: 5em auto
+//  background-color: #fff
+//  border: 1px solid #7D7DBB
+//  padding: 15px
+//  text-align: center
+//  box-shadow: 0 0 10px 1px rgba(79, 130, 128, 0.65)
+//  border-radius: .5em
+//  margin-top: 6em
+
+.results_list
+  position: relative
+  margin-top: .7em
+  margin-bottom: auto
+  margin-left: auto
+  margin-right: auto
+  padding: .4em
+  color: #000055
+  width: 95%
+  background-color: #f9eddb
+  box-shadow: 0 0 10px 1px rgba(79, 130, 128, 0.1)
+  border: 1px solid #CACAE2
+  border-radius: .5em
+  h2
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif
+    font-size: 2.3em
+
+  nav span
+    font-size: 1.3em
+    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif
+    text-shadow: 1px 1px 13px rgb(60, 10, 235)
+
+a.btn.btn-lg.btn-primary
+  margin-left: 1.7em
+  margin-top: 1em
+
+.pagination
+  position: relative
+  left: 55%
+  margin: 0
+  font-size: 1.5em
+
+table
+  border-collapse: collapse
+  margin: 0.75em 1.5em
+  //table-layout: auto //fixed; */
+  width: 95%
+  position: relative
+  left: 3%
+  tr > td
+    margin-top: 2.1em
+
+  tbody
+    margin-left: 0.5em
+    margin-right: 0.5em
+
+
+tr.one_row > td
+  padding-bottom: 1em
+  font-size: 1.5em
+
+  th
+    text-align: center
+  //width: 75em
+  td
+    font-size: 1.5em
+
+//th.name
+//  width: 14em
+

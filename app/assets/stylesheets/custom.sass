@@ -1,0 +1,300 @@
+@import "bootstrap-sprockets"
+@import "bootstrap"
+
+// my vars
+$gray-medium-light: #e31d1d
+//$body-image: 'palace_square_from_roof.jpg'
+$body-background-top: #96B5E1
+$body-background-bottom: #AACAC7
+$gradient-angle: 40deg
+
+$background-main: #282a36
+$background-second: #383a59
+$foreground-main: #f8f8f2
+$selection: #44475A
+$cyan: #8be9fd
+$green: #50fa7b
+$orange: #ffb86c
+$pink: #ff79c6
+$purple: #bd93f9
+$red: #ff5555
+$yellow: #f1fa8c
+$border: $pink
+
+@mixin box_sizing
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+body
+  padding-top: 5em
+  background-color: $background-main
+  text-shadow: $purple
+  height: auto
+  color: $pink
+
+textarea
+  resize: vertical
+
+.center
+  text-align: center
+  h1
+    margin-bottom: 10px
+  background-color: $background-main
+  border: .1px solid $border
+
+.container
+  position: center
+  top: 2em
+  background-color: $background-main
+
+.container .jumbotron
+  border: 20px solid $border
+  border-radius: 20em
+  background-color: $background-main
+
+.results h2
+  color: #5a1a88
+
+h1, h2, h3, h4, h5, h6
+  line-height: 1
+  color: $pink
+
+
+h1
+  font-size: 3em
+  letter-spacing: -2px
+  margin-bottom: 30px
+  text-align: center
+  color: $pink
+
+h2
+  font-size: 1.2em
+  letter-spacing: -1px
+  margin-bottom: 30px
+  text-align: center
+  font-weight: normal
+  color: $pink
+
+p
+  font-size: 1.4em
+  line-height: 1.1em
+
+// help
+.about-copy
+  position: relative
+  top: 3em
+
+h1.list
+  text-align: justify
+
+
+/* header */
+
+#logo
+  float: left
+  margin-right: 10px
+  font-size: 1.7em
+  color: #c4f7ff
+  //text-transform: uppercase
+  letter-spacing: -1px
+  padding-top: 9px
+  font-weight: bold
+
+  &:hover
+    color: #337ab7
+    text-decoration: none
+
+.rails_logo
+  height: .1em
+
+  img
+    vertical-align: middle
+    height: 3.5em
+    margin-top: .1em
+    margin-bottom: 0
+
+ul.nav.navbar-nav.pull-right
+  margin-top: .1em
+
+/* footer */
+
+footer
+  position: fixed
+  left: 0px
+  bottom: 0px
+  margin-top: 15px
+  border-top: 1px solid #9ca6ae
+  color: $pink
+  width: 100%
+  //font-weight: bold
+  background: #607d8b
+  height: 3.7em
+  //margin-bottom: 1px
+
+  p.app_notice_dev
+    font-size: 1em
+    //position: relative
+    //left: 65%
+    //float: inherit
+    top: -2em
+    margin-left: 3em
+
+  h3
+    position: relative
+    font-size: 1.3em
+    left: 20%
+    margin-top: .55em
+    width: 25%
+    margin-right: 1em
+    float: left
+    color: $pink
+
+  .footer_menu
+    width: 35%
+    //float: right
+    //margin-right: .3em
+    position: inherit
+    left: 45%
+
+  a
+    color: #c4f7ff
+    &:hover
+      color: #363636
+
+  small
+    float: left
+
+  ul
+    float: right
+    list-style: none
+    font-size: 1.2em
+    margin-top: .9em
+    margin-right: 2em
+
+    li
+      float: left
+      margin-left: 10px
+
+/* miscellaneous */
+
+.debug_dump
+  clear: both
+  float: left
+  width: 100%
+  margin-top: 45px
+  @include box_sizing
+
+
+
+.about-video
+  font-size: 1.5em
+
+  p
+    display: inline-block
+
+
+
+/* sidebar */
+
+.show_user
+  font-size: 1.5em
+  margin-top: 5em
+
+
+aside
+  section
+    padding: 10px 0
+    border-top: 1px solid $gray-light
+    &:first-child
+      border: 0
+      padding-top: 0
+
+    span
+      display: block
+      margin-bottom: 3px
+      line-height: 1
+
+    h1
+      font-size: 1.4em
+      text-align: left
+      letter-spacing: -1px
+      margin-bottom: 3px
+      margin-top: 0px
+
+.gravatar
+  float: left
+  margin-right: 10px
+
+  width: 3.1em
+  height: 3.1em
+  margin-top: .2em
+  margin-left: .6em
+
+/* forms */
+
+input, textarea, select, .uneditable-input
+  border: 1px solid #bbb
+  width: 100%
+  margin-bottom: 15px
+  @include box_sizing
+
+input
+  height: auto !important
+  font-size: 2em
+
+#error_explanation
+  color: #f00
+  ul
+    list-style: none
+    margin: 0 0 18px 0
+
+label
+  font-size: 1.8em
+
+
+//.field_with_errors
+//  @extend .control-group
+//  @extend .error
+div.span6.offset3
+  display: block
+  width: 60%
+  position: relative
+  left: 20%
+
+
+form.new_user
+  display: block
+  width: 60%
+  position: relative
+  left: 20%
+
+div.actions
+  display: block
+  font-size: 1.3em
+
+input[type="submit"]
+  //-webkit-appearance: button;
+  //cursor: pointer;
+  font-size: 1em
+
+.btn.btn-large.btn-primary
+  display: flex
+  font-size: 1.5em
+  border: 1px solid $border
+  cursor: pointer
+  -webkit-tap-highlight-color: transparent
+  z-index: 0
+  transition: .5s
+
+a.ui_link
+  font-size: 2em
+  font-weight: bold
+
+p.sign_up_link
+  margin-top: 1em
+  font-size: 1.6em
+
+  a
+    //font-size: 1.6em
+    font-weight: bold
