@@ -1,4 +1,4 @@
-// get data from controller        контроль в консоли
+// get data from controller		контроль в консоли
 var imageData = '<%= raw @image_data %>';
 console.log("IN display_theme: @image_data = " + imageData );
 var valuesQty = '<%= @image_data[:values_qty] %>';
@@ -8,9 +8,9 @@ $('.left_controls span.total_values h2.total').append().html(valuesQty);
 // show theme
 var selectedTheme = '<%= @image_data[:theme] %>';
 
-if( selectedTheme == "Выберите тему для оценки" ||
-    selectedTheme == "Select theme to leave your answer" ||
-    selectedTheme == ""){
+if( selectedTheme === "Выберите тему для оценки" ||
+  selectedTheme === "Select theme to leave your answer" ||
+  selectedTheme === ""){
     $('.img-left-side').css({"display": "none"});
     $('.img-right-side').css({"display": "none"});
     $('.image .image_display .image_diag').css({"display": "none"});
@@ -30,8 +30,7 @@ var imageCurrentIndex = '<%= @image_data[:index] %>';
 //var firstThemeImagesName = JSON.parse(firstThemeImages)["name"];
 var oneImageName = '<%= @image_data[:name] %>';
 var oneImageFile = '<%= @image_data[:file] %>';
-console.log("3e IN display_theme: oneImageFile = " +
-    oneImageFile);
+console.log("3e IN display_theme: oneImageFile = " + oneImageFile);
 var oneImageId = '<%= @image_data[:image_id] %>';
 console.log("3f IN display_theme: oneImageId = " + oneImageId);
 var themeImagesSize = '<%= @image_data[:images_arr_size] %>';
@@ -45,4 +44,4 @@ $('.image_display h2.up').append().html(oneImageName);
 var pathImage = "assets/pictures/" + oneImageFile;
 // $('.img-center').html('<img alt="Selected Image" src="' + pathImage + '"/>');
 $(".img-center").attr({title: "Selected image" });
-$(".img-center img").attr({alt: "Selected Image", src: pathImage, title: "Selected image" });
+$(".img-center img").attr({alt: "Selected Image", src:  pathImage, title: "Selected image" });

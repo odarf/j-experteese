@@ -1,9 +1,17 @@
-import { Application } from "@hotwired/stimulus"
+import Rails from "@rails/ujs"
+import Turbolinks from "turbolinks"
+import * as ActiveStorage from "@rails/activestorage"
+import "channels"
 
-const application = Application.start()
+var jQuery = require("jquery");
 
-// Configure Stimulus development experience
-application.debug = false
-window.Stimulus   = application
+global.$ = global.jQuery = jQuery;
+window.$ = window.jQuery = jQuery;
 
-export { application }
+require("bootstrap");
+
+Rails.start()
+Turbolinks.start()
+ActiveStorage.start()
+
+global.Rails = Rails;

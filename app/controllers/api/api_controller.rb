@@ -7,8 +7,7 @@ module Api
 
       render(json: Api::V1::UserSerializer.new(user).to_json)
     end
-
-
+    
     def next_image
       current_index = params[:index].to_i
       theme_id = params[:theme_id].to_i
@@ -39,7 +38,6 @@ module Api
         end
       end
     end
-
 
     def prev_image
       current_index = params[:index].to_i

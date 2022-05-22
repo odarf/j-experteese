@@ -6,7 +6,7 @@
           = gravatar_for @user
           = @user.name
 %p
-  %b = t('.email')
+  %b = email
   = @user.email
 
-  =link_to t('.work'), work_path, class: "btn btn-lg btn-primary"
+  =link_to "work", work_path, class: "btn btn-lg btn-primary"

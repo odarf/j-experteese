@@ -8,7 +8,8 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.2"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
-
+gem "responders"
+gem "gon"
 # Use sqlite3 as the database for Active Record
 # gem "sqlite3", "~> 1.4"
 
@@ -27,24 +28,27 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-gem "haml-rails"
+gem "active_model_serializers"
+gem "activerecord-reset-pk-sequence"
+gem "bcrypt"
 gem 'bootstrap-sass', '>= 3.4.1'
-gem 'sass-rails'
+gem "flash"
+gem "font-awesome-rails"
+gem "font-awesome-sass"
+gem "haml-rails"
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'rails-asset-jqueryui'
-gem 'turbolinks'
+gem 'autoprefixer-rails'
+gem 'kaminari'
+gem "pg"
+gem 'rails-asset-jqueryui'
+gem "rdoc"
+gem 'sass-rails'
 gem "slim"
 gem "slim-rails"
-gem "font-awesome-sass"
-gem "font-awesome-rails"
-gem "flash"
-gem "pg"
-gem "activerecord-reset-pk-sequence"
-gem "bcrypt"
-gem "active_model_serializers"
-gem "rdoc"
-gem 'kaminari'
+gem 'turbolinks'
+gem 'activerecord-reset-pk-sequence'
 # Use Redis adapter to run Action Cable in production
 gem "redis", "~> 4.0"
 

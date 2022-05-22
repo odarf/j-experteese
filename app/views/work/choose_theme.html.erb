@@ -1,0 +1,28 @@
+<!--This is what happens when you remove tourbolinks-->
+<%= stylesheet_link_tag 'application', media: 'all' %>
+
+<script type = "text/javascript" src = "https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $('.image .image_display .image_diag').css({"display": "none"});
+    $('.img-left-side').css({"display": "none"});
+    $('.img-right-side').css({"display": "none"});
+
+
+    // to check whether the target is the content-area itself or a child of the content-area.
+
+    $(document).click(function(e){
+        if($(e.target).is(".select_theme") ||
+          $(e.target).closest(".select_theme").length) {
+            console.log(": In doc.click = IN side content area"  );
+        }
+        else {
+            console.log(": In doc.click = OUT side content area"  );
+            $('.form_select').css({"display": "none"});
+
+            $('.select_theme').empty().html("<%= j render 'work/button_theme_select' -%>");
+        }
+    });
+    $('.select_theme').empty().html("<%= j render 'choose_theme_from_arr' -%>");
+</script>

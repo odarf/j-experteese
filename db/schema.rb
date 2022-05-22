@@ -10,17 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_26_114102) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_22_214745) do
   # These are extensions that must be enabled in order to support this database
+  enable_extension "adminpack"
+  enable_extension "pgagent"
   enable_extension "plpgsql"
 
   create_table "images", force: :cascade do |t|
-    t.string "file"
     t.string "name"
+    t.string "file"
     t.float "avg_value"
-    t.integer "theme_id"
+    t.bigint "theme_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["theme_id"], name: "index_images_on_theme_id"
   end
 
   create_table "themes", force: :cascade do |t|
@@ -36,7 +39,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_26_114102) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
-    t.string "password"
     t.string "remember_token"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["remember_token"], name: "index_users_on_remember_token"
@@ -50,4 +52,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_26_114102) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "images", "themes"
 end
