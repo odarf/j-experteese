@@ -1,25 +1,6 @@
 @import "bootstrap-sprockets"
 @import "bootstrap"
-
-// my vars
-$gray-medium-light: #e31d1d
-//$body-image: 'palace_square_from_roof.jpg'
-$body-background-top: #96B5E1
-$body-background-bottom: #AACAC7
-$gradient-angle: 40deg
-
-$background-main: #282a36
-$background-second: #383a59
-$foreground-main: #f8f8f2
-$selection: #44475A
-$cyan: #8be9fd
-$green: #50fa7b
-$orange: #ffb86c
-$pink: #ff79c6
-$purple: #bd93f9
-$red: #ff5555
-$yellow: #f1fa8c
-$border: $pink
+@import "mixins"
 
 @mixin box_sizing
   -moz-box-sizing: border-box
@@ -29,9 +10,12 @@ $border: $pink
 body
   padding-top: 5em
   background-color: $background-main
-  text-shadow: $purple
+  //text-shadow: $purple
   height: auto
   color: $pink
+
+section
+  overflow: auto
 
 textarea
   resize: vertical
@@ -44,13 +28,13 @@ textarea
   border: .1px solid $border
 
 .container
-  position: center
-  top: 2em
+  position: relative
+  top: 3em
   background-color: $background-main
 
 .container .jumbotron
-  border: 20px solid $border
-  border-radius: 20em
+  border: 1px solid $border
+  border-radius: .5em
   background-color: $background-main
 
 .results h2
@@ -85,8 +69,8 @@ p
   position: relative
   top: 3em
 
-h1.list
-  text-align: justify
+  h1
+    text-align: left
 
 
 /* header */
@@ -96,7 +80,6 @@ h1.list
   margin-right: 10px
   font-size: 1.7em
   color: #c4f7ff
-  //text-transform: uppercase
   letter-spacing: -1px
   padding-top: 9px
   font-weight: bold
@@ -105,15 +88,6 @@ h1.list
     color: #337ab7
     text-decoration: none
 
-.rails_logo
-  height: .1em
-
-  img
-    vertical-align: middle
-    height: 3.5em
-    margin-top: .1em
-    margin-bottom: 0
-
 ul.nav.navbar-nav.pull-right
   margin-top: .1em
 
@@ -121,16 +95,13 @@ ul.nav.navbar-nav.pull-right
 
 footer
   position: fixed
-  left: 0px
-  bottom: 0px
-  margin-top: 15px
-  border-top: 1px solid #9ca6ae
+  left: 0
+  bottom: 0
   color: $pink
   width: 100%
-  //font-weight: bold
-  background: #607d8b
-  height: 3.7em
-  //margin-bottom: 1px
+  background: $background-main
+  background: linear-gradient(0deg, rgba($background-main, 1) 0%, rgba($background-second, 1) 85%)
+  height: 3em
 
   p.app_notice_dev
     font-size: 1em
@@ -152,15 +123,15 @@ footer
 
   .footer_menu
     width: 35%
-    //float: right
-    //margin-right: .3em
     position: inherit
     left: 45%
 
   a
-    color: #c4f7ff
+    position: relative
+    color: $cyan
     &:hover
-      color: #363636
+      transition: all .3s linear
+      color: $pink
 
   small
     float: left
@@ -185,16 +156,6 @@ footer
   margin-top: 45px
   @include box_sizing
 
-
-
-.about-video
-  font-size: 1.5em
-
-  p
-    display: inline-block
-
-
-
 /* sidebar */
 
 .show_user
@@ -205,7 +166,7 @@ footer
 aside
   section
     padding: 10px 0
-    border-top: 1px solid $gray-light
+    //border-top: 1px solid gray
     &:first-child
       border: 0
       padding-top: 0
@@ -220,7 +181,7 @@ aside
       text-align: left
       letter-spacing: -1px
       margin-bottom: 3px
-      margin-top: 0px
+      margin-top: 0
 
 .gravatar
   float: left
@@ -234,7 +195,7 @@ aside
 /* forms */
 
 input, textarea, select, .uneditable-input
-  border: 1px solid #bbb
+  //border: 1px solid #bbb
   width: 100%
   margin-bottom: 15px
   @include box_sizing
@@ -244,7 +205,7 @@ input
   font-size: 2em
 
 #error_explanation
-  color: #f00
+  color: $red
   ul
     list-style: none
     margin: 0 0 18px 0
@@ -253,15 +214,11 @@ label
   font-size: 1.8em
 
 
-//.field_with_errors
-//  @extend .control-group
-//  @extend .error
 div.span6.offset3
   display: block
   width: 60%
   position: relative
   left: 20%
-
 
 form.new_user
   display: block
@@ -278,14 +235,18 @@ input[type="submit"]
   //cursor: pointer;
   font-size: 1em
 
+.btn-primary
+  color: $background-main
+  background-color: $button-color
+
 .btn.btn-large.btn-primary
-  display: flex
+  display: block
   font-size: 1.5em
-  border: 1px solid $border
   cursor: pointer
-  -webkit-tap-highlight-color: transparent
-  z-index: 0
-  transition: .5s
+  position: relative
+  //-webkit-tap-highlight-color: transparent
+  //z-index: 0
+  //transition: 1s
 
 a.ui_link
   font-size: 2em

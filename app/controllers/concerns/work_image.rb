@@ -2,8 +2,6 @@ module WorkImage
   extend ActiveSupport::Concern
 
   include WorkHelper
-
-
   # display image by index for searched theme
   def show_image(theme_id, image_index)
     theme_images = Image.theme_images(theme_id)
@@ -22,13 +20,13 @@ module WorkImage
     values_qty = Value.all.count.round
 
     if user_valued == 1
-      common_ave_value = Image.find_image(image_id).ave_value
-      logger.info "In 1show_image: common_ave_value = #{common_ave_value.inspect} "
-      if common_ave_value.blank?
-        common_ave_value = 0
+      common_avg_value = Image.find_image(image_id).avg_value
+      logger.info "In 1show_image: common_avg_value = #{common_avg_value.inspect} "
+      if common_avg_value.blank?
+        common_avg_value = 0
       end
-      common_ave_value.round unless common_ave_value.blank?
-      logger.info "In 2show_image: common_ave_value = #{common_ave_value.inspect} "
+      common_avg_value.round unless common_avg_value.blank?
+      logger.info "In 2show_image: common_avg_value = #{common_avg_value.inspect} "
     else
       common_ave_value = 0
     end
@@ -49,7 +47,6 @@ module WorkImage
     data
   end
 
-
   def next_index(index, length)
     new_index = index
     # if index < length-1
@@ -60,7 +57,6 @@ module WorkImage
     index < length-1 ? new_index += 1 : new_index = 0
     new_index
   end
-
 
   def prev_index(index, length)
     new_index = index

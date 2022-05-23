@@ -1,13 +1,12 @@
 module Api
   class ApiController < ApplicationController
     include WorkImage
-
     def show
       user = User.find(params[:id])
 
       render(json: Api::V1::UserSerializer.new(user).to_json)
     end
-    
+
     def next_image
       current_index = params[:index].to_i
       theme_id = params[:theme_id].to_i
@@ -21,7 +20,7 @@ module Api
 
       respond_to do |format|
         if new_image_index.blank?
-          format.html {  render nothing: true, status: :unprocessable_entity }
+          format.html { render nothing: true, status: :unprocessable_entity }
           format.json {}
         else
           format.html { render display_theme_path, status: :successfully }
@@ -66,8 +65,6 @@ module Api
         end
       end
     end
-
-
 
     # @note: this method should save value diag for one image
     #   then - start to calculate average value

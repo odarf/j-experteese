@@ -1,0 +1,41 @@
+ru:
+  hello: "Привет, мир!"
+
+  shared:
+    header:
+      # content
+    footer:
+      dev_msg: "Сайт в разработке"
+     # content
+
+  sessions:
+    new:
+    # content
+
+  users:
+    form:
+    # content
+    new:
+    # content
+    show:
+    # content
+
+  work:
+    index:
+    # content
+    button_theme_select:
+    # content
+    button_list_results:
+    # content
+    choose_theme_from_arr:
+    # content
+    display_theme:
+    # content
+    results_list:
+    # content
+
+  main:
+    index:
+      contacts: "Контакты"
+      help: "Помощь"
+      about: "О сайте"

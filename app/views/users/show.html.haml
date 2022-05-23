@@ -5,8 +5,8 @@
         %h1
           = gravatar_for @user
           = @user.name
-%p
-  %b = email
-  = @user.email
+  %p
+    %b = email
+    = @user.email
 
   =link_to "work", work_path, class: "btn btn-lg btn-primary"

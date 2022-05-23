@@ -1,6 +1,6 @@
 - flash.each do |type, message|
   - if type == 'link'
-    .flash{class: message[:type]
+    .flash{class: message[:type]}
       .container
         = link_to message[:message], message[:link]
         %a.close{href: '#', onclick: "$('.flash').slideUp();"}= fa_icon "close"
@@ -11,4 +11,4 @@
     .flash{class: type}
       .container
       = message
-      %a.close{href:'#', onclick:}
+      %a.close{href:'#', onclick: "$('.flash').slideUp();"}= fa_icon "close"

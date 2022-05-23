@@ -1,0 +1,53 @@
+@import "mixins"
+
+.container.header
+  height: 50%
+  top: .35em
+  position: relative
+
+li.logged
+  color: $cyan
+  //position: relative
+  margin-top: 1em
+  font-weight: bold
+  margin-left: 10px
+  margin-right: 22px
+
+  .gravatar-logged
+    height: 50%
+    width: 50%
+
+.navbar
+  background: linear-gradient(0deg, rgba($background-second, 0.85) 0%, rgba($background-main, 0.95) 85%)
+
+.navbar-inverse .navbar-nav > li > a
+  color: $cyan
+//font-weight: bold
+
+.navbar-nav
+  margin-top: .3em
+  font-size: 0.85em
+
+.dropdown
+  display: inline-block
+  position: relative
+
+.dropdown-content
+  display: none
+  position: absolute
+  width: 100%
+  overflow: auto
+  box-shadow: rgba($green, 0.4)
+
+.dropdown:hover .dropdown-content
+  display: block
+
+.dropdown-content a
+  display: block
+  color: #000000
+  padding: 5px
+  text-decoration: none
+
+.dropdown-content a:hover
+  color: $background-main
+  background-color: $pink

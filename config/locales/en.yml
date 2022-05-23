@@ -31,3 +31,42 @@
 
 en:
   hello: "Hello world"
+
+  shared:
+    header:
+    # content
+    footer:
+      dev_msg: "WIP"
+      # content
+
+  sessions:
+    new:
+    # content
+
+  users:
+    form:
+    # content
+    new:
+    # content
+    show:
+    # content
+
+  work:
+    index:
+    # content
+    button_theme_select:
+    # content
+    button_list_results:
+    # content
+    choose_theme_from_arr:
+    # content
+    display_theme:
+    # content
+    results_list:
+    # content
+
+  main:
+    index:
+      contacts: "Contact"
+      help: "Help"
+      about: "About"

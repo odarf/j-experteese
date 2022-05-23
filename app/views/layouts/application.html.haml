@@ -1,15 +1,24 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title JExperteese
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
-    = csrf_meta_tags
-    = csp_meta_tag
-    = stylesheet_link_tag "application", "data-turbo-track": "reload"
-    = javascript_importmap_tags
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:name => "viewport", :content => "text/html; charset=UTF-8, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"}
+    %link{:rel => "shortcut icon", :href => "/assets/favicon.ico"}
     = favicon_link_tag "favicon.ico"
+    = action_cable_meta_tag
+    %title JExperteese
+    %meta{name: "viewport", content: "initial-scale=1, text/html; charset=utf-8,user-scalable=no,maximum-scale=1,width=device-width" }
+    %meta{name: "description", content: "This is an Expert tool. You may leave your expert opinion to selected theme. Выбери тему и оставь свое экспертное мнение по ней."}/
+    %meta{name: "keywords", content: "This is where you put all of the keywords you use in your site"}/
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': true
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"}
+    = javascript_include_tag 'application'
+
   %body
+    #overlay{style:'display:none;'}
     = render 'shared/header'
-    = yield
+    .container
+      = render 'shared/flash'
+      = yield
     = render 'shared/footer'

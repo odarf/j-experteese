@@ -27,4 +27,8 @@ class User < ApplicationRecord
     self.remember_token = User.encrypt(User.new_remember_token)
   end
 
+  def change
+    add_index :users, :email, unique: true
+  end
+
 end

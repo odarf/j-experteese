@@ -1,5 +1,5 @@
 class ThemesController < ApplicationController
-  before_action :set_theme, only: %i[ show edit update destroy ]
+  before_action :set_theme, only: %i[show edit update destroy]
 
   # GET /themes or /themes.json
   def index
@@ -58,13 +58,14 @@ class ThemesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_theme
-      @theme = Theme.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def theme_params
-      params.require(:theme).permit(:name, :items_qty)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_theme
+    @theme = Theme.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def theme_params
+    params.require(:theme).permit(:name, :items_qty)
+  end
 end

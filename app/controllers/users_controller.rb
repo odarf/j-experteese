@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: %i[ show edit update destroy ]
+  before_action :set_user, only: %i[show edit update destroy]
+  wrap_parameters :user, include: [:name, :password, :password_confirmation]
 
   # GET /users or /users.json
   def index

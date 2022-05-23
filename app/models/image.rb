@@ -19,9 +19,9 @@ class Image < ApplicationRecord
     image_id = new_value_data[:image_id]
     theme_id = new_value_data[:theme_id]
     current_user_id = new_value_data[:user_id]
-    user_valued, value = Value.user_valued_exists(currect_user_id, image_id)
+    user_valued, value = Value.user_valued_exists(current_user_id, image_id)
     values_qty = Value.all.count.round
-    common_avg_value = user valued == 1 ? find(image_id).avg_value.round : 0
+    common_avg_value = user_valued == 1 ? find(image_id).avg_value.round : 0
 
     data = {
     values_qty: values_qty,
@@ -29,10 +29,16 @@ class Image < ApplicationRecord
     theme_id: theme_id,
     image_id: image_id,
     user_valued: user_valued,
-    common_avg_value: common_avg_value
-    }
+    common_avg_value: common_avg_value}
 
     data
   end
 
+  def self.value_and_update(new_value_data)
+    image_id = new_value_data[:image_id]
+    Value.create(new_value_data)
+    avg_value = Value.calculate_avg_value(image_id).round
+    recalculate_avg_value(image_id, avg_value)
+    show_valued_image(new_value_data)
+  end
 end

@@ -1,4 +1,5 @@
 class WorkController < ApplicationController
+  skip_before_action :verify_authenticity_token
   include WorkImage
   include WorkHelper
 
@@ -39,13 +40,12 @@ class WorkController < ApplicationController
   end
 
   def results_list
-    # @selected_theme_id = session[:selected_theme_id]
-    @selected_theme_id = 1
+    @selected_theme_id = session[:selected_theme_id]
+    # @selected_theme_id = 1  # kostyl!!!!
     res_composite_diag = Image.where(theme_id: @selected_theme_id).order('avg_value DESC')
     composite_results_size = res_composite_diag.size
     @composite_results = res_composite_diag.take(composite_results_size)
     logger.info "In WorkController#results_list @composite_results = #{@composite_results}"
     @composite_results_paged = pages_of(@composite_results, 6)
   end
-
 end

@@ -9,3 +9,7 @@
       %ul
         %li=link_to "about", about_path
         %li=link_to "contact", contacts_path
+      %p.locale
+        = link_to image_tag("Ru.jpg", alt: "", style: "width: 5%; height: 5%", title: "Русский"), locale: :ru
+        = link_to image_tag("Uk.jpg", alt: "", style: "width: 5%; height: 5%", title: "English"), locale: :en
+        = I18n.locale

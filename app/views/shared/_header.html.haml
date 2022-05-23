@@ -1,22 +1,18 @@
-%nav
-  %ul.nav.navbar-nav.pull-right
-    %li= link_to 'home', root_path
-    %li= link_to 'help', help_path
-    - if signed_in?
-      %li= link_to "Users", '#'
-      %li.logged
-        #{current_user.email}
-      = gravatar_for current_user
-      %li#fat-menu.dropdown
-        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-          %p
-            = 'person'
-            %b.caret
-        %ul.dropdown-menu
-          %li= link_to 'profile', current_user
-          %li= link_to 'settings', '#'
-          %li.divider
-          %li
-            = link_to 'sign_out', signout_path, method: "delete"
-    - else
-      %li= link_to 'sign_in', signin_path
+%header.navbar.navbar-fixed-top.navbar-inverse
+  %nav
+    %ul.nav.navbar-nav.pull-right
+      %li= link_to 'home', root_path
+      %li= link_to 'help', main_help_path
+      - if signed_in?
+        %li.logged
+          #{current_user.email}
+        = gravatar_for current_user
+
+        .dropdown
+          %label #{current_user.name}
+          .dropdown-content
+            %li= link_to 'profile', current_user
+            %li= link_to 'settings', '#'
+            %li= link_to 'sign_out', signout_path, method: "delete"
+      - else
+        %li= link_to 'sign_in', signin_path

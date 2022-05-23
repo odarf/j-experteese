@@ -1,0 +1,50 @@
+console.log("IN  results_list " );
+
+var compositeResultsSize  = '<%= @composite_results_size %>';
+console.log("compositeResultsSize = " + compositeResultsSize );
+
+var overlayId = document.getElementById('overlay_m');
+console.log("1 IN list_results: overlayId = " + overlayId );
+
+function overlay() {
+    jQuery.noConflict();
+    (function ($) {
+            var overlayId = document.getElementById("overlay_m");
+            console.log( overlayId );
+            console.log("IN results_list: function overlay() = " + overlayId );
+            overlayId.style.visibility = (overlayId.style.visibility == "visible") ? "hidden" : "visible";
+        }
+    )(jQuery);
+
+}
+$('#overlay').click(function overlay(){
+});
+
+//When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target === overlayId) {
+        overlayId.style.visibility = "hidden";
+        console.log("IN window.onclick: overlayId.style.visibility = hidden");
+    }
+};
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+console.log("IN list_results: span class= " + span );
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    overlayId.style.visibility = "hidden";
+    console.log("ON: span.onclick: overlayId.style.display = " + overlayId.style.display );
+    console.log("ON: span.onclick: overlayId.style.visibility = " + overlayId.style.visibility );
+};
+
+$('.results_list').empty().html("<%= j render 'results_list' -%>");
+
+
+// pagination listing
+$(".results_list a, .pagination a").on("click", function(){
+//    console.log("ON: results_list.onclick: this.href = " + this.href );
+    $.getScript(this.href);
+    return false;
+});
