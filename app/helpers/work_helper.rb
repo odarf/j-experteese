@@ -13,7 +13,7 @@ module WorkHelper
     @image_data[:file]  = data[:file]
     @image_data[:user_valued] = data[:user_valued]
     @image_data[:value] = data[:value]
-    @image_data[:common_ave_value] = data[:common_ave_value]
+    @image_data[:common_avg_value] = data[:common_avg_value]
 
     @image_data
   end

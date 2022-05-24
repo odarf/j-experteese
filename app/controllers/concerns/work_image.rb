@@ -2,6 +2,7 @@ module WorkImage
   extend ActiveSupport::Concern
 
   include WorkHelper
+
   # display image by index for searched theme
   def show_image(theme_id, image_index)
     theme_images = Image.theme_images(theme_id)
@@ -11,7 +12,7 @@ module WorkImage
 
     one_image_attr = theme_images[image_index].attributes
     logger.info "In show_image: one_image_attr = #{one_image_attr.inspect} "
-    image_id = one_image_attr["id"]
+    image_id = one_image_attr['id']
     logger.info "In show_image: image_id = #{image_id.inspect} "
 
     user_valued, value = Value.user_valued_exists(current_user_id, image_id) # 1/0 # true/false .exists?
@@ -28,7 +29,7 @@ module WorkImage
       common_avg_value.round unless common_avg_value.blank?
       logger.info "In 2show_image: common_avg_value = #{common_avg_value.inspect} "
     else
-      common_ave_value = 0
+      common_avg_value = 0
     end
 
     data = { index: image_index,
@@ -37,12 +38,11 @@ module WorkImage
              theme_id: theme_id,
              images_arr_size: theme_images.size,
              image_id: image_id,
-             name: one_image_attr["name"],
-             file: one_image_attr["file"],
+             name: one_image_attr['name'],
+             file: one_image_attr['file'],
              user_valued: user_valued,
              value: value,
-             common_ave_value: common_ave_value
-    }
+             common_avg_value: common_avg_value }
     logger.info "In show_image:  data = #{data.inspect} "
     data
   end
@@ -54,13 +54,13 @@ module WorkImage
     # else
     #   new_index = 0
     # end
-    index < length-1 ? new_index += 1 : new_index = 0
+    index < length - 1 ? new_index += 1 : new_index = 0
     new_index
   end
 
   def prev_index(index, length)
     new_index = index
-    index > 0 ? new_index -= 1 : new_index = length-1
+    index > 0 ? new_index -= 1 : new_index = length - 1
     new_index
   end
 

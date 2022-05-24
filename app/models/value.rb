@@ -1,6 +1,5 @@
 class Value < ApplicationRecord
   belongs_to :user
-  belongs_to :image
 
   scope :user_valued_image, ->(current_user_id, image_id) { where(user_id: current_user_id, image_id: image_id) }
 
@@ -13,7 +12,7 @@ class Value < ApplicationRecord
       res = 1
       value = value_image[0].value
     end
-    [res, value]
+    return res, value
   end
 
   def self.calculate_avg_value(image_id)

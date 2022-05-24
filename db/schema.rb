@@ -10,10 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_05_22_214745) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_24_002751) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "adminpack"
-  enable_extension "pgagent"
   enable_extension "plpgsql"
 
   create_table "images", force: :cascade do |t|
@@ -52,5 +50,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_22_214745) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "images", "themes"
 end

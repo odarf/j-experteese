@@ -21,8 +21,7 @@ class WorkController < ApplicationController
   def display_theme
     @image_data = {}
     I18n.locale = session[:current_locale]
-    # current_user_id = current_user.id
-    current_user_id = 1
+    current_user_id = current_user.id
     if params[:theme] == "-----" #.blank?
       theme = 'Select theme to leave your answer'
       theme_id = 1
@@ -36,6 +35,7 @@ class WorkController < ApplicationController
       data = show_image(theme_id, 0)
     end
     session[:selected_theme_id] = theme_id
+
     image_data(theme, data)
   end
 

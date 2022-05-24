@@ -23,14 +23,14 @@ class Image < ApplicationRecord
     values_qty = Value.all.count.round
     common_avg_value = user_valued == 1 ? find(image_id).avg_value.round : 0
 
-    data = {
-    values_qty: values_qty,
-    current_user_id: current_user_id,
-    theme_id: theme_id,
-    image_id: image_id,
-    user_valued: user_valued,
-    common_avg_value: common_avg_value}
-
+    data = { values_qty: values_qty,
+      current_user_id: current_user_id,
+      theme_id: theme_id,
+      image_id: image_id,
+      user_valued: user_valued,
+      value: value,
+      common_avg_value: common_avg_value }
+    logger.info "In show_valued_image: #{data.inspect} "
     data
   end
 
