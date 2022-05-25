@@ -97,11 +97,10 @@ button
 
 
 .image
-  //margin-top: 2.05%
   $img-small-height: 1.1em
 
-
   .left_controls
+    border: solid 1px $border
     display: block
     border-radius: 5px
     background: $background-second
@@ -113,7 +112,6 @@ button
     span.common_value, .total_values
       text-align: center
       position: relative
-      //left: 15%
       color: $cyan
       font-size: 1.4em
       font-weight: bold
@@ -134,9 +132,9 @@ button
         width: 45px
         padding-top: 10px
         padding-bottom: 10px
-        background-image: -webkit-linear-gradient(top, #cccccc, #330000)
-        background-image: -o-linear-gradient(top, #cccccc, #330000)
-        background-image: -moz-linear-gradient(top, #cccccc, #330000)
+        background-image: -webkit-linear-gradient(top, $background-main, $background-second)
+        background-image: -o-linear-gradient(top, $background-main, $background-second)
+        background-image: -moz-linear-gradient(top, $background-main, $background-second)
 
     span.total_values
       display: block
@@ -282,8 +280,8 @@ button
 
 
   .image_display
-    //@include span-columns(8)
-    //@include outer-container(100%)
+    border-radius: 5px
+    border: solid 1px $border
     position: relative
     //margin: 0 0 10px 0
     height: 45em
@@ -295,7 +293,7 @@ button
     h2.up-theme
       font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif
       text-align: center
-      color: #2094a6
+      color: $pink
       margin: 10px
       cursor: default
       height: 2.1em
@@ -304,17 +302,12 @@ button
     h2.up
       font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif
       text-align: left
-      color: #770772
-      //margin: 10px
+      color: $purple
       cursor: default
-      //height: 2em
       position: relative
       left: 8%
       width: 82%
-      margin-top: 15px
-      margin-bottom: 5px
-      margin-left: 5px
-      margin-right: 5px
+      margin: 15px 5px 5px
       font-size: 1.6em
 
     .img-left-side
@@ -411,38 +404,21 @@ button
       background-image: -webkit-linear-gradient(top, #cccccc, #d00346)
       background-image: -o-linear-gradient(top, #cccccc, #d00346)
       background-image: -moz-linear-gradient(top, #cccccc, #d00346)
-      width: 47px   /////////////////////////
-      height: 47px /////////////////////////
-      border-radius: 22px   /////////////////////////
-      //-webkit-animation: turning_cw 5s infinite
-      //-moz-animation: turning_cw 5s infinite
-      //animation: turning_cw 5s infinite
-      position: relative   /////////////////////////
+      width: 47px
+      height: 47px
+      border-radius: 22px
+      position: relative
 
       &:hover
         -webkit-box-shadow: 0 0 40px 15px #dd56e0
         -moz-box-shadow: 0 0 40px 15px #dd56e0
         box-shadow: 0 0 40px 15px #dd56e0
 
-
-    //.outer-circle_left
-
-    //.indic-circ.show
-    //  +clearfix
-    //  display: block
-    //  border-radius: 30px
-    //  border: 30px solid #30fa29
-    //  left: 43.75%
-    //width: 30px   /////////////////////////
-    //height: 30px
-    //position: relative
-
-
     .image_diag
       display: none
       position: relative
       border-radius: 5px
-      //border: solid 1px #67aa73
+      border: solid 1px $border
       background: $background-second
       height: 8.6em
       color: $cyan

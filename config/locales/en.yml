@@ -30,43 +30,73 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hello: "Привет, мир!"
 
   shared:
     header:
-    # content
+      home: "Home"
+      help: "Help"
+      sign_in: "Sign in"
+      sign_out: "Sign out"
+      profile: "Profile"
+      settings: "Settings"
     footer:
+      about: "About"
+      contact: "Contacts"
       dev_msg: "WIP"
-      # content
 
   sessions:
     new:
-    # content
+      sign_in: "Sign in"
+      sign_up: "Sign up"
+      email: "E-mail"
+      password: "Password"
+      new_user?: "New user?"
 
   users:
     form:
-    # content
+      name: "Name"
+      email: "E-mail"
+      password: "Password"
+      password_confirm: "Password confirmation"
+      create_account: "Create my account"
     new:
-    # content
+      new_user_sign_up: "New user sign up"
+      back: "Back"
     show:
-    # content
+      work: "Proceed to work"
+      email: "Email"
 
   work:
     index:
-    # content
+      def_select_theme: "Select theme to leave your answer"
     button_theme_select:
-    # content
+      select_theme_bt: "Select theme"
     button_list_results:
-    # content
+      results_list: "List results"
     choose_theme_from_arr:
-    # content
+      select_theme: "Select theme ar"
     display_theme:
-    # content
+      select_theme: "Select theme"
+    choose_theme:
+      select_theme: "Select theme ch"
+    images:
+      common_value: "Common value"
+      total_values: "Total values"
+      make_decision: "Make your decision"
+      save_decision: "Save"
+      theme_name: "Theme name"
     results_list:
-    # content
+      no_values: "No Values results for selected theme..."
+      select_theme: "Select other theme"
+      return_to_main: "Return to main"
+      page_title: "Go to work area"
 
   main:
     index:
-      contacts: "Contact"
-      help: "Help"
-      about: "About"
+      to_work: "Proceed to work!"
+      to_sign_up: "Sign up now!"
+    about:
+      about_title: "About"
+    contacts:
+      contacts_title: "Contacts"

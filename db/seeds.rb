@@ -10,25 +10,29 @@
 Image.delete_all
 Image.reset_pk_sequence
 Image.create([
-               { name: 'J1',  file: 'j1.png',  theme_id: 1 },
-               { name: 'J2',  file: 'j2.jpg',  theme_id: 1 },
-               { name: 'J3',  file: 'j3.jpg',  theme_id: 2 },
-               { name: 'J4',  file: 'j4.png',  theme_id: 2 },
-               { name: 'J5',  file: 'j5.png',  theme_id: 3 },
-               { name: 'J6',  file: 'j6.png',  theme_id: 3 },
-               { name: 'J7',  file: 'j7.jpg',  theme_id: 4 },
-               { name: 'J8',  file: 'j8.png',  theme_id: 4 },
-               { name: 'J9',  file: 'j9.png',  theme_id: 3 },
-               { name: 'J10', file: 'j10.png', theme_id: 3 },
-               { name: 'J11', file: 'j11.png', theme_id: 3 },
-               { name: 'J12', file: 'j12.png', theme_id: 1 },
-               { name: 'J13', file: 'j13.jpg', theme_id: 2 }
+               { name: 'Daredevil',                   file: 'Daredevil.jpg', theme_id: 4 },
+               { name: 'Deadpool',                    file: 'Deadpool.jpg',  theme_id: 4 },
+               { name: 'Iron-Man',                    file: 'IronMan.jpg',   theme_id: 4 },
+               { name: 'Wolverine',                   file: 'Wolverine.png', theme_id: 4 },
+               { name: 'KIA',                         file: 'KIA.png',       theme_id: 3 },
+               { name: 'LADA',                        file: 'lada.jpeg',     theme_id: 3 },
+               { name: 'Tesla',                       file: 'Tesla.png',     theme_id: 3 },
+               { name: 'Toyota',                      file: 'toyota.jpg',    theme_id: 3 },
+               { name: 'Volkswagen',                  file: 'vw.png',        theme_id: 3 },
+               { name: 'Star-Wars: Original trilogy', file: 'SW1.jpeg',      theme_id: 2 },
+               { name: 'Star-Wars: Prequel trilogy',  file: 'SW2.jpg',       theme_id: 2 },
+               { name: 'Star-Wars: Sequel trilogy',   file: 'SW3.jpg',       theme_id: 2 },
+               { name: 'Winter',                      file: 'winter.jpg',    theme_id: 5 },
+               { name: 'Autumn',                      file: 'autumn.jpg',    theme_id: 5 },
+               { name: 'Summer',                      file: 'summer.jpg',    theme_id: 5 },
+               { name: 'Spring',                      file: 'spring.jpg',    theme_id: 5 },
+               { name: 'J',                           file: 'j1.png',        theme_id: 1 }
              ])
 Theme.delete_all
 Theme.reset_pk_sequence
 Theme.create([
                { name: '-----' }, # 1 no theme СДЕЛАТЬ 3 ТЕМЫ
-               { name: 'Какой фильм "Звёздных войн" нравится Вам больше всего?' }, # 2
+               { name: 'Какая трилогия "Звёздных войн" нравится Вам больше всего?' }, # 2
                { name: 'Какая марка автомобилей нравится Вам больше всего?'     }, # 3
                { name: 'Какой герой комиксов нравится Вам больше всего?'        }, # 4
                { name: 'Какое время года нравится Вам больше?'                  }  # 5

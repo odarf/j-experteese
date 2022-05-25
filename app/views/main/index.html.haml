@@ -7,6 +7,6 @@
     RoR practice.
 
   - if signed_in?
-    = link_to "Proceed to work!", work_path, class: "btn btn-lg btn-primary"
+    = link_to t('.to_work'), work_path, class: "btn btn-lg btn-primary"
   -else
-    = link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary"
+    = link_to t('.to_sign_up'), signup_path, class: "btn btn-lg btn-primary"

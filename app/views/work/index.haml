@@ -568,17 +568,18 @@
 
           })( jQuery );
 
-          function updateSlider(t){var e=document.getElementById("chosen_value");console.log("IN updateSlider:  - slideAmount = "+t),e.innerHTML=t;document.getElementById("pic")}
+          function updateSlider(t){var e=document.getElementById("chosen_value");
+          console.log("IN updateSlider:  - slideAmount = "+t),e.innerHTML=t;document.getElementById("pic")}
 
 
         %script{ :src=> "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js", :integrity=> "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM", :crossorigin=>"anonymous"}
         %script{:type => "text/javascript"}
 
         %span.total_values
-          = 'total_values'
+          = t('work.images.total_values')
           %h2.total{:title => "Total values"} #{@values_qty.round}
         %span.common_value
-          = 'common_value'
+          = t('work.images.common_value')
           %h2.common{:title => "Common value"}
     .col-md-9
       .image_display
@@ -605,10 +606,10 @@
           .col-md-12
             .image_diag
               %h2.down{:title => "Value scale"}
-                = 'make_decision'
+                = t('work.images.make_decision')
               %button.btn.btn-outline-success{:title => "Save image diag results" }
                 %a{"data-remote" => "true", :format => "js", :href => "#", :title => "Save image diag results" }
-                  = 'save_decision'
+                  = t('work.images.save_decision')
               #chosen_value 0
               .row
                 .col-md-1
@@ -674,9 +675,7 @@
                         });
                     });
                   function evaluation(value){
-                      var val=parseInt(value);
-
-                      return val
+                      return parseInt(value)
                   }
 
                   var imageCurrentIndex = '<%= @image_data[:index] %>';
@@ -691,7 +690,7 @@
 
                   var selectedTheme = '<%= @image_data[:theme] %>';
 
-                  if (selectedTheme == "Выберите тему для оценки" || selectedTheme == "Select theme to leave your answer" || selectedTheme == "Select theme" || selectedTheme == "") {
+                  if (selectedTheme === "Выберите тему для оценки" || selectedTheme === "Select theme to leave your answer" || selectedTheme === "Select theme" || selectedTheme === "" || selectedTheme === "-----") {
                     $('.img-left-side').css({"display": "none"});
                     $('.img-right-side').css({"display": "none"});
                     $('.image .image_display .image_diag').css({"display": "none"});
@@ -721,7 +720,7 @@
                   }
                   var currentUserId = '<%= @image_data[:current_user_id] %>';
                   console.log("3d IN display_theme: currentUserId = " + currentUserId);
-                  if(selectedTheme != '<%= @image_data[:theme] %>') {
+                  if(selectedTheme !== '<%= @image_data[:theme] %>') {
                     $('.image_display h2.up-theme').append().html(selectedTheme);
                   }
                   $('.btn.btn-outline-success').unbind( "click" ).click(function(event) {

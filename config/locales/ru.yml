@@ -3,39 +3,69 @@ ru:
 
   shared:
     header:
-      # content
+      home: "Главная"
+      help: "Помощь"
+      sign_in: "Войти"
+      sign_out: "Выйти"
+      profile: "Профиль"
+      settings: "Настройки"
     footer:
-      dev_msg: "Сайт в разработке"
-     # content
+      about: "О сайте"
+      contact: "Контакты"
+      dev_msg: "WIP"
 
   sessions:
     new:
-    # content
+      sign_in: "Войти"
+      sign_up: "Зарегистрироваться"
+      email: "E-mail"
+      password: "Пароль"
+      new_user?: "Новый пользователь?"
 
   users:
     form:
-    # content
+      name: "Имя пользователя"
+      email: "E-mail"
+      password: "Пароль"
+      password_confirm: "Подтверждение пароля"
+      create_account: "Создайть аккаунт"
     new:
-    # content
+      new_user_sign_up: "Регистрация нового пользователя"
+      back: "Назад"
     show:
-    # content
+      work: "К оценке"
+      email: "Email"
 
   work:
     index:
-    # content
+      def_select_theme: "Выберите тему для оценки"
     button_theme_select:
-    # content
+      select_theme_bt: "Выбрать тему"
     button_list_results:
-    # content
+      results_list: "Результаты"
     choose_theme_from_arr:
-    # content
+      select_theme: "Выберите тему"
     display_theme:
-    # content
+      select_theme: "Выберите тему для оценки"
+    choose_theme:
+      select_theme: "Выберите тему"
+    images:
+      common_value: "Средняя оценка"
+      total_values: "Всего оценок"
+      make_decision: "Выберите свою оценку"
+      save_decision: "Сохранить"
+      theme_name: "Тема"
     results_list:
-    # content
+      no_values: "Результаты по выбранной теме отсутствуют..."
+      select_theme: "Выберите другую тему"
+      return_to_main: "На главную"
+      page_title: "Перейдите к выбору темы"
 
   main:
     index:
-      contacts: "Контакты"
-      help: "Помощь"
-      about: "О сайте"
+      to_work: "К оценкам"
+      to_sign_up: "Зарегистрируйтесь сейчас"
+    about:
+      about_title: "О сайте"
+    contacts:
+      contacts_title: "Контакты"

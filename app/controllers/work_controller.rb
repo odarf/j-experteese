@@ -5,7 +5,7 @@ class WorkController < ApplicationController
 
   def index
     @images_count = Image.all.count
-    @selected_theme = 'Select theme to leave your answer'
+    @selected_theme = t('.def_select_theme')
     # @selected_theme = t(".def_select_theme")
     @selected_image_name = 'j1'
     @values_qty = Value.all.count
@@ -23,7 +23,7 @@ class WorkController < ApplicationController
     I18n.locale = session[:current_locale]
     current_user_id = current_user.id
     if params[:theme] == "-----" #.blank?
-      theme = 'Select theme to leave your answer'
+      theme = t('.select_theme')
       theme_id = 1
       values_qty = Value.all.count.round
       data = { index: 0, name: 'j1', values_qty: values_qty,
