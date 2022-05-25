@@ -29,4 +29,4 @@ test:
 production:
   <<: *default
   database: j_experteese_production
-  password: <%= Rails.application.secrets[:database][:password] %>
+  password: <%= ENV['EXERCISE_DATABASE_PASSWORD'] %>
