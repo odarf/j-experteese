@@ -1,0 +1,71 @@
+/* line 3, app/assets/stylesheets/header.sass */
+.container.header {
+  height: 50%;
+  top: .35em;
+  position: relative;
+}
+
+/* line 8, app/assets/stylesheets/header.sass */
+li.logged {
+  color: #8be9fd;
+  margin-top: 1em;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 22px;
+}
+
+/* line 16, app/assets/stylesheets/header.sass */
+li.logged .gravatar-logged {
+  height: 50%;
+  width: 50%;
+}
+
+/* line 20, app/assets/stylesheets/header.sass */
+.navbar {
+  background: linear-gradient(0deg, rgba(56, 58, 89, 0.85) 0%, rgba(40, 42, 54, 0.95) 85%);
+}
+
+/* line 23, app/assets/stylesheets/header.sass */
+.navbar-inverse .navbar-nav > li > a {
+  color: #8be9fd;
+}
+
+/* line 27, app/assets/stylesheets/header.sass */
+.navbar-nav {
+  margin-top: .3em;
+  font-size: 0.85em;
+}
+
+/* line 31, app/assets/stylesheets/header.sass */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 35, app/assets/stylesheets/header.sass */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: rgba(80, 250, 123, 0.4);
+}
+
+/* line 42, app/assets/stylesheets/header.sass */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* line 45, app/assets/stylesheets/header.sass */
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+
+/* line 51, app/assets/stylesheets/header.sass */
+.dropdown-content a:hover {
+  color: #282a36;
+  background-color: #ff79c6;
+}

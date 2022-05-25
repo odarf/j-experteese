@@ -1,0 +1,626 @@
+/* line 3, app/assets/stylesheets/work.sass */
+i {
+  height: 1em;
+  font-size: 1em;
+}
+
+/* line 7, app/assets/stylesheets/work.sass */
+i:hover:not(:disabled) {
+  cursor: pointer;
+  color: #ff79c6;
+}
+
+/* line 13, app/assets/stylesheets/work.sass */
+i:hover:not(:disabled) h2.up {
+  color: #bd93f9;
+}
+
+/* line 17, app/assets/stylesheets/work.sass */
+button {
+  color: #50fa7b;
+  background-color: #50fa7b;
+  -webkit-text-decoration: #282a36;
+          text-decoration: #282a36;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif;
+  text-shadow: rgba(13, 178, 159, 0.24);
+  font-size: 1.25em;
+}
+
+/* line 27, app/assets/stylesheets/work.sass */
+.button__left {
+  display: block;
+  border-radius: 4px;
+  height: 3em;
+  background: #50fa7b;
+  width: 80%;
+  position: relative;
+  left: 10%;
+  border: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+/* line 40, app/assets/stylesheets/work.sass */
+.button__left .modalBtn {
+  margin-top: .1em;
+}
+
+/* line 43, app/assets/stylesheets/work.sass */
+.button__left .theme {
+  margin-top: 1.2em;
+}
+
+/* line 47, app/assets/stylesheets/work.sass */
+.button__choose {
+  color: #82A1C4;
+  height: 2.2em;
+  box-shadow: 3px 3px 4px #ACC9E5;
+  background: rgba(222, 165, 242, 0.29);
+  width: 60%;
+  text-align: center;
+  border: rgba(219, 255, 219, 0.7);
+  padding: 0 10px;
+  margin-bottom: 1.5em;
+  font-size: 1.1em;
+}
+
+/* line 63, app/assets/stylesheets/work.sass */
+.button__results.save {
+  border-radius: 55px;
+  height: 2.5em;
+  box-shadow: 3px 3px 4px #989BB0;
+  background: rgba(209, 211, 141, 0.4);
+  width: 20%;
+  border: rgba(255, 255, 255, 0.7);
+  margin-top: .5em;
+  display: block;
+  cursor: auto;
+  text-decoration: none;
+  float: left;
+  margin-left: 8em;
+  margin-bottom: .6em;
+}
+
+/* line 85, app/assets/stylesheets/work.sass */
+.button__results.save a {
+  text-shadow: 0 -1px 1px #4aa5cf;
+  text-decoration: none;
+  color: #4863be;
+  position: relative;
+  text-align: center;
+}
+
+/* line 93, app/assets/stylesheets/work.sass */
+.button__results.save:hover:not(:disabled) {
+  background: #badde4;
+}
+
+/* line 95, app/assets/stylesheets/work.sass */
+.button__results.save:hover:not(:disabled) a {
+  text-decoration: none;
+}
+
+/* line 102, app/assets/stylesheets/work.sass */
+.image .left_controls {
+  border: solid 1px #ff79c6;
+  display: block;
+  border-radius: 5px;
+  background: #383a59;
+  color: gray;
+  height: 45em;
+  width: 100%;
+  margin-top: 2em;
+}
+
+/* line 112, app/assets/stylesheets/work.sass */
+.image .left_controls span.common_value, .image .left_controls .total_values {
+  text-align: center;
+  position: relative;
+  color: #8be9fd;
+  font-size: 1.4em;
+  font-weight: bold;
+  top: 4em;
+  display: none;
+  height: 3em;
+}
+
+/* line 122, app/assets/stylesheets/work.sass */
+.image .left_controls span.common_value h2, .image .left_controls .total_values h2 {
+  border-radius: 10px;
+  text-align: center;
+  color: #50fa7b;
+  font-weight: bold;
+  font-size: large;
+  display: inline-block;
+}
+
+/* line 131, app/assets/stylesheets/work.sass */
+.image .left_controls span.common_value h2.common, .image .left_controls .total_values h2.common {
+  width: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: -moz-linear-gradient(top, #282a36, #383a59);
+}
+
+/* line 139, app/assets/stylesheets/work.sass */
+.image .left_controls span.total_values {
+  display: block;
+}
+
+/* line 142, app/assets/stylesheets/work.sass */
+.image .left_controls span.total_values h2.total {
+  width: inherit;
+  padding: .5em;
+  background-image: -moz-linear-gradient(top, #282a36, #383a59);
+}
+
+/* line 150, app/assets/stylesheets/work.sass */
+.image .left_controls input.load_image {
+  color: gray;
+}
+
+/* line 153, app/assets/stylesheets/work.sass */
+.image .left_controls select#theme {
+  margin-bottom: 10px;
+}
+
+/* line 156, app/assets/stylesheets/work.sass */
+.image .left_controls .select_theme {
+  display: block;
+  height: 6em;
+  margin-top: 9em;
+}
+
+/* line 161, app/assets/stylesheets/work.sass */
+.image .left_controls .select_theme .form_select {
+  display: block;
+  color: #3b519c;
+  width: 80%;
+  height: 6em;
+  position: relative;
+  text-align: center;
+  left: 11%;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif;
+  font-size: 1.5em;
+}
+
+/* line 173, app/assets/stylesheets/work.sass */
+.image .left_controls .select_theme .form_select input {
+  color: #3475BE;
+  background: rgba(222, 165, 242, 0);
+  padding: 0;
+  font-size: .9em;
+  height: 1.5em;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* line 185, app/assets/stylesheets/work.sass */
+.image .left_controls .select_image {
+  display: block;
+  height: 10em;
+  margin-top: .1em;
+}
+
+/* line 190, app/assets/stylesheets/work.sass */
+.image .left_controls .select_image .form_select {
+  display: block;
+  color: #4863be;
+  width: 80%;
+  height: 5.5em;
+  position: relative;
+  text-align: center;
+  left: 11%;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif;
+  font-size: 1.5em;
+  margin-top: 2.5em;
+}
+
+/* line 202, app/assets/stylesheets/work.sass */
+.image .left_controls .select_image .form_select input {
+  color: #3475BE;
+  background: rgba(222, 165, 242, 0);
+  padding: 0;
+  font-size: .9em;
+  height: 1.5em;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* line 215, app/assets/stylesheets/work.sass */
+.image .left_controls .image_input_form {
+  height: 18em;
+  font-size: 1.5em;
+  color: #4863be;
+  display: block;
+  position: relative;
+  width: 80%;
+  text-align: center;
+  left: 11%;
+  margin-top: 1.5em;
+}
+
+/* line 226, app/assets/stylesheets/work.sass */
+.image .left_controls .image_input_form input {
+  color: #3475BE;
+  background-color: #F5F5F5;
+  padding: 0;
+  font-size: .9em;
+  height: 1.5em;
+  transition: background-color 0.3s ease-in-out;
+  cursor: text;
+}
+
+/* line 239, app/assets/stylesheets/work.sass */
+.image .left_controls .image_input_form .file_url {
+  padding: 0;
+  position: relative;
+  margin-bottom: 1.15em;
+  opacity: 0.4;
+}
+
+/* line 245, app/assets/stylesheets/work.sass */
+.image .left_controls .image_input_form .file_url input {
+  background-color: #F5F5F5;
+}
+
+/* line 248, app/assets/stylesheets/work.sass */
+.image .left_controls .image_input_form .file_url:hover {
+  opacity: 1;
+}
+
+/* line 251, app/assets/stylesheets/work.sass */
+.image .left_controls .image_input_form .file_url:hover input[type="text"]:hover {
+  border: 1px solid #438F43;
+}
+
+/* line 254, app/assets/stylesheets/work.sass */
+.image .left_controls .image_input_form .file_device {
+  padding: 0;
+  position: relative;
+  opacity: 0.4;
+}
+
+/* line 259, app/assets/stylesheets/work.sass */
+.image .left_controls .image_input_form .file_device input {
+  background-color: #F5F5F5;
+}
+
+/* line 261, app/assets/stylesheets/work.sass */
+.image .left_controls .image_input_form .file_device:hover {
+  opacity: 1;
+}
+
+/* line 265, app/assets/stylesheets/work.sass */
+.image .left_controls .image_input_form .button__choose input {
+  background-color: rgba(222, 165, 242, 0);
+  cursor: pointer;
+}
+
+/* line 270, app/assets/stylesheets/work.sass */
+.image .left_controls .select_image_hide {
+  display: none;
+}
+
+/* line 273, app/assets/stylesheets/work.sass */
+.image .left_controls a {
+  text-shadow: 0 -1px 1px #4aa5cf;
+  text-decoration: none;
+  color: #4863be;
+}
+
+/* line 282, app/assets/stylesheets/work.sass */
+.image .image_display {
+  border-radius: 5px;
+  border: solid 1px #ff79c6;
+  position: relative;
+  height: 45em;
+  background: #383a59;
+  color: gray;
+  margin-top: 2em;
+}
+
+/* line 293, app/assets/stylesheets/work.sass */
+.image .image_display h2.up-theme {
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif;
+  text-align: center;
+  color: #ff79c6;
+  margin: 10px;
+  cursor: default;
+  height: 2.1em;
+  font-size: 2em;
+}
+
+/* line 302, app/assets/stylesheets/work.sass */
+.image .image_display h2.up {
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif;
+  text-align: left;
+  color: #bd93f9;
+  cursor: default;
+  position: relative;
+  left: 8%;
+  width: 82%;
+  margin: 15px 5px 5px;
+  font-size: 1.6em;
+}
+
+/* line 313, app/assets/stylesheets/work.sass */
+.image .image_display .img-left-side {
+  display: none;
+  margin-left: 1.35em;
+}
+
+/* line 320, app/assets/stylesheets/work.sass */
+.image .image_display .img-left-sidehover {
+  background-color: #9bb2fc;
+}
+
+/* line 322, app/assets/stylesheets/work.sass */
+.image .image_display h3 {
+  color: #2094a6;
+  text-align: center;
+  text-shadow: rgba(13, 178, 159, 0.24);
+  font-size: 2.6em;
+}
+
+/* line 328, app/assets/stylesheets/work.sass */
+.image .image_display .img-right-side {
+  display: none;
+  margin-left: -70%;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes displayIn {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}
+
+@keyframes displayIn {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}
+
+/* line 357, app/assets/stylesheets/work.sass */
+.image .image_display .img-center {
+  display: block;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 34em;
+}
+
+/* line 365, app/assets/stylesheets/work.sass */
+.image .image_display .img-center .img-title {
+  display: none;
+}
+
+/* line 373, app/assets/stylesheets/work.sass */
+.image .image_display .img-center:hover {
+  border: solid 3px #7384aa;
+  cursor: pointer;
+  transition: border .3s ease-in-out;
+}
+
+/* line 378, app/assets/stylesheets/work.sass */
+.image .image_display .img-center:hover h2.up {
+  color: #555fbe;
+}
+
+/* line 380, app/assets/stylesheets/work.sass */
+.image .image_display .img-center:hover .img-title {
+  display: block;
+  box-sizing: content-box;
+  color: #c3ffff;
+  position: absolute;
+  top: 2em;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 2.7em;
+  line-height: 3em;
+}
+
+/* line 394, app/assets/stylesheets/work.sass */
+.image .image_display .image_user_value {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: large;
+  padding-top: .6em;
+  display: none;
+  left: 45%;
+  top: -5%;
+  background-image: -moz-linear-gradient(top, #cccccc, #d00346);
+  width: 47px;
+  height: 47px;
+  border-radius: 22px;
+  position: relative;
+}
+
+/* line 412, app/assets/stylesheets/work.sass */
+.image .image_display .image_user_value:hover {
+  box-shadow: 0 0 40px 15px #dd56e0;
+}
+
+/* line 417, app/assets/stylesheets/work.sass */
+.image .image_display .image_diag {
+  display: none;
+  position: relative;
+  border-radius: 5px;
+  border: solid 1px #ff79c6;
+  background: #383a59;
+  height: 8.6em;
+  color: #8be9fd;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif;
+  top: 3.65em;
+}
+
+/* line 430, app/assets/stylesheets/work.sass */
+.image .image_display .image_diag .indicator {
+  background: #deb2ad;
+  text-align: center;
+}
+
+/* line 434, app/assets/stylesheets/work.sass */
+.image .image_display .image_diag .indicator .outer-circle {
+  display: none;
+  left: 10.5%;
+  border: 25px solid #ECEBFA;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  position: relative;
+}
+
+/* line 444, app/assets/stylesheets/work.sass */
+.image .image_display .image_diag .indicator .outer-circle:hover {
+  box-shadow: 0 0 30px 15px #453D9B;
+}
+
+/* line 449, app/assets/stylesheets/work.sass */
+.image .image_display .image_diag .indicator .outer-circle.show {
+  display: block;
+  border-radius: 30px;
+  border: 30px solid #30fa29;
+  left: 43.75%;
+}
+
+/* line 456, app/assets/stylesheets/work.sass */
+.image .image_display .image_diag h2.down {
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif;
+  color: #555fbe;
+  display: block;
+  font-size: 2em;
+  margin-left: 1em;
+  margin-bottom: 0;
+  float: left;
+  margin-top: .85em;
+}
+
+/* line 466, app/assets/stylesheets/work.sass */
+.image .image_display .image_diag .scale {
+  display: none;
+  width: 100%;
+  background-color: lightgrey;
+  line-height: .1em;
+  position: relative;
+  top: .9em;
+  background: linear-gradient(to right, rgba(247, 27, 27, 0.68), rgba(165, 165, 0, 0.68), rgba(27, 247, 27, 0.68));
+}
+
+/* line 475, app/assets/stylesheets/work.sass */
+.image .image_display .image_diag .scale .small_img_box {
+  display: block;
+  width: 1.35em;
+  height: 100%;
+  left: 20.75%;
+  vertical-align: top;
+  background-color: #b5d31c;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 495, app/assets/stylesheets/work.sass */
+.results_list {
+  position: relative;
+  margin: .7em auto auto;
+  padding: .4em;
+  color: #000055;
+  width: 95%;
+  background-color: #f9eddb;
+  box-shadow: 0 0 10px 1px rgba(79, 130, 128, 0.1);
+  border: 1px solid #CACAE2;
+  border-radius: .5em;
+}
+
+/* line 505, app/assets/stylesheets/work.sass */
+.results_list h2 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 2.3em;
+}
+
+/* line 509, app/assets/stylesheets/work.sass */
+.results_list nav span {
+  font-size: 1.3em;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  text-shadow: 1px 1px 13px #3c0aeb;
+}
+
+/* line 515, app/assets/stylesheets/work.sass */
+a.btn.btn-lg.btn-primary {
+  margin-left: 1.7em;
+  margin-top: 1em;
+}
+
+/* line 519, app/assets/stylesheets/work.sass */
+.pagination {
+  position: relative;
+  left: 55%;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+/* line 525, app/assets/stylesheets/work.sass */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 1.5em;
+  width: 95%;
+  position: relative;
+  left: 3%;
+}
+
+/* line 532, app/assets/stylesheets/work.sass */
+table tr > td {
+  margin-top: 2.1em;
+}
+
+/* line 535, app/assets/stylesheets/work.sass */
+table tbody {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/* line 540, app/assets/stylesheets/work.sass */
+tr.one_row > td {
+  padding-bottom: 1em;
+  font-size: 1.5em;
+}
+
+/* line 544, app/assets/stylesheets/work.sass */
+tr.one_row > td th {
+  text-align: center;
+}
+
+/* line 547, app/assets/stylesheets/work.sass */
+tr.one_row > td td {
+  font-size: 1.5em;
+}

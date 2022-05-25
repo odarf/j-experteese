@@ -1,0 +1,28 @@
+/* line 1, app/assets/stylesheets/icons.sass */
+.fa.fa-flag.iconsMain {
+  color: #39733b;
+}
+
+/* line 7, app/assets/stylesheets/icons.sass */
+.fa.fa-video-camera.fa-4x.fa-stack-fa.iconsMain {
+  color: #5f90de;
+}
+
+/* line 12, app/assets/stylesheets/icons.sass */
+.fa.fa-video-camera.fa-4x.fa-stack-fa.iconsMain:hover:not(:disabled) {
+  color: #9f87ab;
+  cursor: pointer;
+  font-size: 4.1em;
+}
+
+/* line 19, app/assets/stylesheets/icons.sass */
+.fa.fa-bars.fa-4x.fa-stack-fa.iconsMain {
+  color: #5f90de;
+}
+
+/* line 24, app/assets/stylesheets/icons.sass */
+.fa.fa-bars.fa-4x.fa-stack-fa.iconsMain:hover:not(:disabled) {
+  color: #9f87ab;
+  cursor: pointer;
+  font-size: 4.1em;
+}
