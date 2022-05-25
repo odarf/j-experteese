@@ -16,7 +16,7 @@ default: &default
 development:
   <<: *default
   database: j_experteese_development
-  password: password
+  password: <%= Rails.application.secrets[:database][:password] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -24,7 +24,7 @@ development:
 test:
   <<: *default
   database: j_experteese_test
-  password: password
+  password: <%= Rails.application.secrets[:database][:password] %>
 
 production:
   <<: *default

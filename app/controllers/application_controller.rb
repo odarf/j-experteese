@@ -18,6 +18,7 @@ class ApplicationController < ActionController::Base
   private
 
   def set_locale_from_params
+    foo = 0
     if params[:locale]
       extr_locale_in_accept_lang
       if I18n.available_locales.include?(params[:locale].to_sym)
