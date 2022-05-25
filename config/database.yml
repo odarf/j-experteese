@@ -28,5 +28,5 @@ test:
 
 production:
   <<: *default
-  database: j_experteese_test
+  database: j_experteese_production
   password: <%= Rails.application.secrets[:database][:password] %>
